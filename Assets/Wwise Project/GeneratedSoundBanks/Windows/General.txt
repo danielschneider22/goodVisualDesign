@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	98870701	Coin_Pickup			\Default Work Unit\Coin_Pickup	
+	1068347553	Music_Test			\Default Work Unit\Music_Test	
+	2501428482	Footstep_Test			\Default Work Unit\Footstep_Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	770275163	Footstep	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep		54656
+	974549072	Song 1	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Song 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Segment\Song 1		13794576
+	1042903363	Coin_Pickup	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pickup		213424
+

@@ -6,6 +6,7 @@ public class CollectCoin : MonoBehaviour
 {
     private AudioManager audioManager;
     public GameObject coinParticleEffect;
+    public AK.Wwise.Event SomeSound;
 
     // Start is called before the first frame update
     void Awake()
@@ -17,7 +18,8 @@ public class CollectCoin : MonoBehaviour
     {
         if (collision.name == "Player")
         {
-            audioManager.Play("CollectCoin", 0);
+            //audioManager.Play("CollectCoin", 0);
+            SomeSound.Post(gameObject);
             GameObject particleEffect = Instantiate(coinParticleEffect, transform.position, coinParticleEffect.transform.rotation);
             Destroy(gameObject);
         }

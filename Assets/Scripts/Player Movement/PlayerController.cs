@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] public LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
 	[SerializeField] public List<Transform> m_GroundChecks;                           // Positions marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
-
+	public AK.Wwise.Event SomeSound;
 	const float k_GroundedRadius = .05f; // Radius of the overlap circle to determine if grounded
 	const float wall_radius = .1f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
@@ -208,7 +208,8 @@ public class PlayerController : MonoBehaviour
 
 			// m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 			m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_JumpForce);
-			audioManager.Play("Jump", 0);
+			//audioManager.Play("Jump", 0);
+			SomeSound.Post(gameObject);
 			animator.SetTrigger("stretch");
 		}
 

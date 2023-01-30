@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Footstep_Test" ID="{259AC4F2-8A41-4672-B80F-745C52275EAB}">
+					<ChildrenList>
+						<Action Name="" ID="{ED0A7F99-8515-4354-BBE5-4DE32BDE00AE}" ShortID="843539338">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footstep" ID="{0CAC2F60-5C7F-4E46-8E9E-52C6BDF44162}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Test" ID="{F3151622-39E1-4B67-AB41-CFC1268093A8}">
+					<ChildrenList>
+						<Action Name="" ID="{49989350-8BC2-4638-AE21-947299943AA4}" ShortID="430554175">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{8066CD97-1722-4528-AF5D-4EB5A18A987C}" WorkUnitID="{0FB71C2D-C03B-4E2B-B1FD-0F759C513B38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Coin_Pickup" ID="{9B5E7652-50B7-4CE8-9A7B-73E92DBC65D6}">
+					<ChildrenList>
+						<Action Name="" ID="{E11667C8-DA83-4C94-A1FF-AC710F1DC8C2}" ShortID="717822016">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Coin_Pickup" ID="{40C86198-0EF4-4BD9-8776-2FD6A17B929B}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
