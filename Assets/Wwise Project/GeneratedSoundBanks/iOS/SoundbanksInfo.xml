@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{55FF85BB-93F6-01BE-5FBC-9E94F56E9F33}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{64E2A1D7-8EFD-A640-8C90-3B5774F91FE6}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -17,9 +17,9 @@
 					<ShortName>ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17.wav</ShortName>
 					<CachePath>SFX/ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem</CachePath>
 				</File>
-				<File Id="974549072" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Song 1.wav</ShortName>
-					<CachePath>SFX/Song 1_D79FB2B7.wem</CachePath>
+				<File Id="951694428" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>160 BPM Idea 2.wav</ShortName>
+					<CachePath>SFX/160 BPM Idea 2_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="1042903363" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit.wav</ShortName>
@@ -37,9 +37,9 @@
 						<MediaRef Id="770275163"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1068347553" Name="Music_Test" DurationType="Infinite">
+				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="974549072"/>
+						<MediaRef Id="951694428"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -172,5 +172,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{373535A7-8A59-4616-BFA6-315DBD168A23}</FileHash>
+	<FileHash>{D6B9656B-C4E8-F3D4-098D-259A96CD26A5}</FileHash>
 </SoundBanksInfo>

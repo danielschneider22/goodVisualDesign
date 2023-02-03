@@ -15,7 +15,7 @@ namespace AK
     {
         static const AkUniqueID COIN_PICKUP = 98870701U;
         static const AkUniqueID FOOTSTEP_TEST = 2501428482U;
-        static const AkUniqueID MUSIC_TEST = 1068347553U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
     } // namespace EVENTS
 
     namespace BANKS

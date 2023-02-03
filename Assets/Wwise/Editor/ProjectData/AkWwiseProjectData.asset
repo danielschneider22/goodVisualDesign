@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: bd93ed118ea47d4ea9e2eba80b5743e1
     GuidInternal: 
-    m_lastTime: -8585265644165526866
+    m_lastTime: -8585261713461581963
     List:
     - name: Coin_Pickup
       guid: 52765e9bb750e84c9a7b73e92dbc65d6
