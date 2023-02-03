@@ -36,7 +36,7 @@ public class BeatsManager : MonoBehaviour
             if(totalTime - lastBeat > (beatTempo * .9f))
             {
                 float beatTime = totalTime / (beatTempo * 2);
-                if (Mathf.Abs((int)beatTime - beatTime) <= .005f)
+                if (Mathf.Abs((int)beatTime - beatTime) <= .05f)
                 {
                     BeatsTimer = 0f;
                     doAltColor = doAltColor ? false : true;

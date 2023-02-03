@@ -10,7 +10,22 @@ public class HiddenObjDetector : MonoBehaviour
 
     public List<Sprite> sensorSprites;
     public SpriteRenderer sensorSpriteRenderer;
+    public bool isGrowing = false;
 
+    float timeElapsed;
+    float lerpDuration = .3f;
+    float startValue;
+    float startValueColor;
+    float endValue;
+    float valueToLerp;
+    float valueToLerpColor;
+
+    float regularSensorX;
+
+    private void Start()
+    {
+        regularSensorX = sensorSpriteRenderer.transform.localScale.x;
+    }
     private void Update()
     {
         float minDist = 1333333330f;
@@ -64,5 +79,38 @@ public class HiddenObjDetector : MonoBehaviour
 
         float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
         sensorSpriteRenderer.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+
+        if (timeElapsed < lerpDuration)
+        {
+
+            valueToLerp = Mathf.Lerp(startValue, endValue, timeElapsed / lerpDuration);
+            valueToLerpColor = Mathf.Lerp(startValueColor, startValueColor == 255 ? 0 : 255, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            sensorSpriteRenderer.transform.localScale = new Vector3(valueToLerp, sensorSpriteRenderer.transform.localScale.y, 1);
+            sensorSpriteRenderer.color = new Color32(113, 139, 173, (byte)valueToLerpColor);
+        }
+    }
+
+    public void ExpandRetractSensor()
+    {
+        isGrowing = !isGrowing;
+
+        if(isGrowing)
+        {
+            timeElapsed = 0f;
+            startValue = regularSensorX;
+            endValue = regularSensorX * 1.25f;
+            //sensorSpriteRenderer.color = new Color32(131, 181, 154, 255);
+            sensorSpriteRenderer.color = new Color32(131, 181, 154, 0);
+            startValueColor = 0;
+        } else
+        {
+            timeElapsed = 0f;
+            startValue = regularSensorX * 1.25f;
+            endValue = regularSensorX;
+            sensorSpriteRenderer.color = new Color32(113, 139, 173, 255);
+            startValueColor = 255;
+        }
+        
     }
 }
