@@ -6,7 +6,6 @@ using UnityEngine;
 public class HiddenObjDetector : MonoBehaviour
 {
     public Transform listOfHiddenObjs;
-    public TextMeshProUGUI distanceText;
 
     public List<Sprite> sensorSprites;
     public SpriteRenderer sensorSpriteRenderer;
@@ -22,9 +21,12 @@ public class HiddenObjDetector : MonoBehaviour
 
     float regularSensorX;
 
+    Color32 startRendererColor;
+
     private void Start()
     {
         regularSensorX = sensorSpriteRenderer.transform.localScale.x;
+        startRendererColor = sensorSpriteRenderer.color;
     }
     private void Update()
     {
@@ -39,28 +41,27 @@ public class HiddenObjDetector : MonoBehaviour
                 closestObj = child.gameObject;
             }
         }
-        distanceText.text = minDist.ToString() ;
-        if(minDist < 10)
+        if(minDist < 25)
         {
             sensorSpriteRenderer.sprite = sensorSprites[0];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 11)
+        else if (minDist < 32)
         {
             sensorSpriteRenderer.sprite = sensorSprites[1];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 12)
+        else if (minDist < 40)
         {
             sensorSpriteRenderer.sprite = sensorSprites[2];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 12.8)
+        else if (minDist < 50)
         {
             sensorSpriteRenderer.sprite = sensorSprites[3];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 13.5)
+        else if (minDist < 60)
         {
             sensorSpriteRenderer.sprite = sensorSprites[4];
             sensorSpriteRenderer.enabled = true;
@@ -69,6 +70,7 @@ public class HiddenObjDetector : MonoBehaviour
         {
             sensorSpriteRenderer.enabled = false;
         }
+        Debug.Log(minDist);
         
         Vector3 targ = closestObj.transform.position;
         targ.z = 0f;
@@ -87,7 +89,7 @@ public class HiddenObjDetector : MonoBehaviour
             valueToLerpColor = Mathf.Lerp(startValueColor, startValueColor == 255 ? 0 : 255, timeElapsed / lerpDuration);
             timeElapsed += Time.deltaTime;
             sensorSpriteRenderer.transform.localScale = new Vector3(valueToLerp, sensorSpriteRenderer.transform.localScale.y, 1);
-            sensorSpriteRenderer.color = new Color32(113, 139, 173, (byte)valueToLerpColor);
+            sensorSpriteRenderer.color = new Color32(startRendererColor.r, startRendererColor.g, startRendererColor.b, (byte)valueToLerpColor);
         }
     }
 
@@ -100,15 +102,14 @@ public class HiddenObjDetector : MonoBehaviour
             timeElapsed = 0f;
             startValue = regularSensorX;
             endValue = regularSensorX * 1.25f;
-            //sensorSpriteRenderer.color = new Color32(131, 181, 154, 255);
-            sensorSpriteRenderer.color = new Color32(131, 181, 154, 0);
+            sensorSpriteRenderer.color = new Color32(startRendererColor.r, startRendererColor.g, startRendererColor.b, 0);
             startValueColor = 0;
         } else
         {
             timeElapsed = 0f;
             startValue = regularSensorX * 1.25f;
             endValue = regularSensorX;
-            sensorSpriteRenderer.color = new Color32(113, 139, 173, 255);
+            sensorSpriteRenderer.color = new Color32(startRendererColor.r, startRendererColor.g, startRendererColor.b, 255);
             startValueColor = 255;
         }
         

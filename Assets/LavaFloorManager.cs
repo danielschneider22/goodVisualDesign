@@ -8,6 +8,6 @@ public class LavaFloorManager : MonoBehaviour
 
     public void ScaleUpLavaFloor()
     {
-        lavaFloorTransform.transform.localScale = new Vector3(lavaFloorTransform.transform.localScale.x, lavaFloorTransform.transform.localScale.y + .05f, lavaFloorTransform.transform.localScale.z);
+        lavaFloorTransform.transform.localScale = new Vector3(lavaFloorTransform.transform.localScale.x, lavaFloorTransform.transform.localScale.y + .07f, lavaFloorTransform.transform.localScale.z);
     }
 }

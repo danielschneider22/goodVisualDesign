@@ -6,11 +6,11 @@ using CodeMonkey.Utils;
 public class EnvironmentButtons : MonoBehaviour {
 
     private void Awake() {
-        Animation animation = GetComponent<Animation>();
+        // Animation animation = GetComponent<Animation>();
 
-        transform.Find("Button").GetComponent<Button_Sprite>().ClickFunc = () => {
+        /*transform.Find("Button").GetComponent<Button_Sprite>().ClickFunc = () => {
             animation.Play();
-        };
+        };*/ 
     }
 
 }

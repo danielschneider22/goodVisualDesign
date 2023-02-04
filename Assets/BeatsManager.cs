@@ -11,7 +11,7 @@ public class BeatsManager : MonoBehaviour
     public TextMeshProUGUI randomText;
     public float beatTempo;
     public AkAmbient BGMusic;
-    public Image image;
+    public SpriteRenderer image;
     public bool doAltColor;
     public float totalTime;
     public float lastBeat;
@@ -46,12 +46,12 @@ public class BeatsManager : MonoBehaviour
                 {
                     BeatsTimer = 0f;
                     doAltColor = doAltColor ? false : true;
-                    image.color = doAltColor ? new Color32(100, 0, 0, 255) : new Color32(0, 100, 0, 255);
+                    image.color = doAltColor ? new Color32(33, 158, 188, 255) : new Color32(35, 160, 190, 255);
                     OnBeatEvent.Invoke();
                     lastBeat = totalTime;
                 }
             }
-            
+
 
             /* BeatsTimer = BeatsTimer + Time.deltaTime;
             if (BeatsTimer >= (beatTempo * 2))
@@ -59,7 +59,7 @@ public class BeatsManager : MonoBehaviour
                 BeatsTimer = 0f;
                 doAltColor = doAltColor ? false : true;
                 image.color = doAltColor ? new Color32(100, 0, 0, 255) : new Color32(0, 100, 0, 255);
-                image.color = doAltColor ? new Color32(100, 0, 0, 255) : new Color32(0, 100, 0, 255);
+                image.color = doAltColor ? new Color32(100, 0, 0, 255) : new Color32(33, 158, 188, 255);
                 OnBeatEvent.Invoke();
             }*/
             // randomText.text = BeatsTimer.ToString();
@@ -75,7 +75,7 @@ public class BeatsManager : MonoBehaviour
         {
             BGMusic.gameObject.SetActive(true);
         }*/
-        if(musicTiming == "playingIntro")
+        if (musicTiming == "playingIntro")
         {
             introTimer = introTimer + Time.deltaTime;
             if (introTimer >= 12f)
@@ -102,7 +102,7 @@ public class BeatsManager : MonoBehaviour
     {
         // BGMusic.enabled = true;
         doAltColor = doAltColor ? false : true;
-        image.color = doAltColor ? new Color32(100, 0, 0, 255) : new Color32(0, 100, 0, 255);
+        image.color = doAltColor ? new Color32(33, 158, 188, 255) : new Color32(35, 160, 190, 255);
         OnBeatEvent.Invoke();
         IntroMusic.Post(gameObject);
         musicTiming = "playingIntro";
