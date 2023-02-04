@@ -6,8 +6,8 @@
 				<SoundBank Name="General" ID="{88B803B2-0B77-4F47-A918-E274C185AB86}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Footstep_Test" ID="{259AC4F2-8A41-4672-B80F-745C52275EAB}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Music_Test" ID="{F3151622-39E1-4B67-AB41-CFC1268093A8}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Coin_Pickup" ID="{9B5E7652-50B7-4CE8-9A7B-73E92DBC65D6}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Music" ID="{6B8D6CD1-D01A-4EE7-A01A-F522D6DD451A}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

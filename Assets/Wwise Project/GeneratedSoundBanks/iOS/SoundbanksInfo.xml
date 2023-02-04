@@ -9,17 +9,21 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{64E2A1D7-8EFD-A640-8C90-3B5774F91FE6}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{493F53BF-4C63-FB1F-DFAA-1A98FAA61A80}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
+				<File Id="353574437" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Main_Music_Loop_160BPM.wav</ShortName>
+					<CachePath>SFX/Main_Music_Loop_160BPM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="443311452" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music_Intro_Loop_160BPM.wav</ShortName>
+					<CachePath>SFX/Music_Intro_Loop_160BPM_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="770275163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17.wav</ShortName>
 					<CachePath>SFX/ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem</CachePath>
-				</File>
-				<File Id="951694428" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>160 BPM Idea 2.wav</ShortName>
-					<CachePath>SFX/160 BPM Idea 2_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="1042903363" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit.wav</ShortName>
@@ -27,19 +31,24 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="98870701" Name="Coin_Pickup" DurationType="OneShot" DurationMin="1.1110834" DurationMax="1.1110834">
-					<MediaRefs>
-						<MediaRef Id="1042903363"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="2501428482" Name="Footstep_Test" DurationType="OneShot" DurationMin="0.28416666" DurationMax="0.28416666">
 					<MediaRefs>
 						<MediaRef Id="770275163"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2932040671" Name="Play_Music" DurationType="Infinite">
+				<Event Id="761761105" Name="Key_Pickup" DurationType="OneShot" DurationMin="1.1110834" DurationMax="1.1110834">
 					<MediaRefs>
-						<MediaRef Id="951694428"/>
+						<MediaRef Id="1042903363"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="984952705" Name="Music_Intro" DurationType="OneShot" DurationMin="13" DurationMax="13">
+					<MediaRefs>
+						<MediaRef Id="443311452"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3937699135" Name="Music_Loop" DurationType="OneShot" DurationMin="37.17308" DurationMax="37.17308">
+					<MediaRefs>
+						<MediaRef Id="353574437"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -172,5 +181,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D6B9656B-C4E8-F3D4-098D-259A96CD26A5}</FileHash>
+	<FileHash>{25322432-360A-CEA2-7CC5-AE3CF02D0793}</FileHash>
 </SoundBanksInfo>

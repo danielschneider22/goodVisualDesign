@@ -1,10 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
-	98870701	Coin_Pickup			\Default Work Unit\Coin_Pickup	
+	761761105	Key_Pickup			\Default Work Unit\Key_Pickup	
+	984952705	Music_Intro			\Default Work Unit\Music_Intro	
 	2501428482	Footstep_Test			\Default Work Unit\Footstep_Test	
-	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	3937699135	Music_Loop			\Default Work Unit\Music_Loop	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	353574437	Music_Loop	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\iOS\SFX\Main_Music_Loop_160BPM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Loop\Music_Loop		6557428
+	443311452	Music_Intro	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\iOS\SFX\Music_Intro_Loop_160BPM_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Intro\Music_Intro		2293296
 	770275163	Footstep	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\iOS\SFX\ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep		54656
-	951694428	160 BPM Idea 2	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\iOS\SFX\160 BPM Idea 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\New Music Segment\160 BPM Idea 2		8674228
-	1042903363	Coin_Pickup	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\iOS\SFX\ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pickup		213424
+	1042903363	Key_Pickup	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\iOS\SFX\ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Key_Pickup		213424
 

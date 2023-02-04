@@ -14,13 +14,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Music_Test" ID="{F3151622-39E1-4B67-AB41-CFC1268093A8}"/>
 				<Event Name="Coin_Pickup" ID="{9B5E7652-50B7-4CE8-9A7B-73E92DBC65D6}">
 					<ChildrenList>
 						<Action Name="" ID="{E11667C8-DA83-4C94-A1FF-AC710F1DC8C2}" ShortID="717822016">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Coin_Pickup" ID="{40C86198-0EF4-4BD9-8776-2FD6A17B929B}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music" ID="{6B8D6CD1-D01A-4EE7-A01A-F522D6DD451A}">
+					<ChildrenList>
+						<Action Name="" ID="{596A6C3B-FFD2-4C42-A9B0-05F2D9C96FC4}" ShortID="411073888">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{8066CD97-1722-4528-AF5D-4EB5A18A987C}" WorkUnitID="{0FB71C2D-C03B-4E2B-B1FD-0F759C513B38}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
