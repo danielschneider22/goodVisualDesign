@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class LavaFloorManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform lavaFloorTransform;
 
-    // Update is called once per frame
-    void Update()
+    public void ScaleUpLavaFloor()
     {
-        
+        lavaFloorTransform.transform.localScale = new Vector3(lavaFloorTransform.transform.localScale.x, lavaFloorTransform.transform.localScale.y + .05f, lavaFloorTransform.transform.localScale.z);
     }
 }

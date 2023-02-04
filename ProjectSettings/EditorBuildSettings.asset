@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Black and White 1.unity
-    guid: 044fcf64517ffe34fb62b17065103255
-  - enabled: 1
-    path: Assets/Scenes/Rain.unity
-    guid: d61dccd7b8bee704789698640d38483e
-  - enabled: 1
     path: Assets/Scenes/Color.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Black and White 1.unity
+    guid: 044fcf64517ffe34fb62b17065103255
+  - enabled: 0
+    path: Assets/Scenes/Rain.unity
+    guid: d61dccd7b8bee704789698640d38483e
   m_configObjects: {}
