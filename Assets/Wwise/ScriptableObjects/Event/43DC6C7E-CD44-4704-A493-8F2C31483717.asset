@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82d63908bb305944fae5c03b14deb805, type: 3}
-  m_Name: 6B8D6CD1-D01A-4EE7-A01A-F522D6DD451A
+  m_Name: 43DC6C7E-CD44-4704-A493-8F2C31483717
   m_EditorClassIdentifier: 
-  objectName: Play_Music
-  id: 2932040671
-  guid: 6B8D6CD1-D01A-4EE7-A01A-F522D6DD451A
+  objectName: Music_Loop
+  id: 3937699135
+  guid: 43DC6C7E-CD44-4704-A493-8F2C31483717
