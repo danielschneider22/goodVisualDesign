@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7012017507569630492}
   - component: {fileID: 3403806237754058392}
   m_Layer: 11
-  m_Name: Lava Particle
+  m_Name: Lava Particle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
