@@ -28,6 +28,10 @@ public class BeatsManager : MonoBehaviour
 
     public UnityEvent OnBeatEvent;
 
+    public List<PulseLightWithMusic> pulseLightWithMusicList;
+    public Transform torches;
+    public Transform moveUpAndDownObjs;
+
 
     private void Start()
     {
@@ -51,30 +55,7 @@ public class BeatsManager : MonoBehaviour
                     lastBeat = totalTime;
                 }
             }
-
-
-            /* BeatsTimer = BeatsTimer + Time.deltaTime;
-            if (BeatsTimer >= (beatTempo * 2))
-            {
-                BeatsTimer = 0f;
-                doAltColor = doAltColor ? false : true;
-                image.color = doAltColor ? new Color32(100, 0, 0, 255) : new Color32(0, 100, 0, 255);
-                image.color = doAltColor ? new Color32(100, 0, 0, 255) : new Color32(33, 158, 188, 255);
-                OnBeatEvent.Invoke();
-            }*/
-            // randomText.text = BeatsTimer.ToString();
         }
-        // if(totalTime > 5f)
-        // {
-        // BGMusic.Stop(0);
-        // BGMusic.gameObject.SetActive(false);
-        // audioSource.Stop();
-        // totalTime = 0f;
-        // }
-        /*else if(lastBeat > 0f && !BGMusic.gameObject.activeSelf)
-        {
-            BGMusic.gameObject.SetActive(true);
-        }*/
         if (musicTiming == "playingIntro")
         {
             introTimer = introTimer + Time.deltaTime;
@@ -106,5 +87,26 @@ public class BeatsManager : MonoBehaviour
         OnBeatEvent.Invoke();
         IntroMusic.Post(gameObject);
         musicTiming = "playingIntro";
+
+        foreach(Transform child in moveUpAndDownObjs)
+        {
+            child.GetComponent<MoveUpAndDown>().duration = beatTempo;
+            child.GetComponent<MoveUpAndDown>().enabled = true;
+        }
+    }
+
+    public void DoPulseLights()
+    {
+        foreach(PulseLightWithMusic child in pulseLightWithMusicList)
+        {
+            child.TogglePulse();
+        }
+        foreach(Transform child in torches)
+        {
+            foreach(PulseLightWithMusic p in child.GetComponent<TorchManager>().pulseLightWithMusicList)
+            {
+                p.TogglePulse();
+            }
+        }
     }
 }

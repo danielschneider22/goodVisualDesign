@@ -41,27 +41,27 @@ public class HiddenObjDetector : MonoBehaviour
                 closestObj = child.gameObject;
             }
         }
-        if(minDist < 25)
+        if(minDist < 17)
         {
             sensorSpriteRenderer.sprite = sensorSprites[0];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 32)
+        else if (minDist < 25)
         {
             sensorSpriteRenderer.sprite = sensorSprites[1];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 40)
+        else if (minDist < 32)
         {
             sensorSpriteRenderer.sprite = sensorSprites[2];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 50)
+        else if (minDist < 40)
         {
             sensorSpriteRenderer.sprite = sensorSprites[3];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 60)
+        else if (minDist < 50)
         {
             sensorSpriteRenderer.sprite = sensorSprites[4];
             sensorSpriteRenderer.enabled = true;
@@ -70,7 +70,6 @@ public class HiddenObjDetector : MonoBehaviour
         {
             sensorSpriteRenderer.enabled = false;
         }
-        Debug.Log(minDist);
         
         Vector3 targ = closestObj.transform.position;
         targ.z = 0f;

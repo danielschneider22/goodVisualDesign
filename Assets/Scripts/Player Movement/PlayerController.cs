@@ -238,4 +238,9 @@ public class PlayerController : MonoBehaviour
 
 		spriteRenderer.flipX = !spriteRenderer.flipX;
 	}
+
+	public void IdleWithMusicBounce()
+    {
+		animator.SetTrigger("idleWithMusicBounce");
+    }
 }
