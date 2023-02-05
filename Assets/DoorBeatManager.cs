@@ -12,7 +12,11 @@ public class DoorBeatManager : MonoBehaviour
     }
     public void ToggleDoor()
     {
-        isClosed = !isClosed;
-        animator.SetBool("IsOpen", isClosed);
+        if(gameObject.activeSelf)
+        {
+            isClosed = !isClosed;
+            animator.SetBool("IsOpen", isClosed);
+        }
+        
     }
 }

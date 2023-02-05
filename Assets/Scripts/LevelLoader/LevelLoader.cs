@@ -15,10 +15,14 @@ public class LevelLoader : MonoBehaviour
     public GameObject player;
     private Vector3 initPlayerPosition;
 
+    public GameObject lava;
+    private Vector3 initLavaPosition;
+
     private void Awake()
     {
         // resetAnimators();
         initPlayerPosition = player.transform.position;
+        initLavaPosition = lava.transform.position;
     }
 
     private void resetAnimators()
@@ -65,6 +69,7 @@ public class LevelLoader : MonoBehaviour
 
     public void MakePlayerUndead()
     {
+        lava.transform.position = initLavaPosition;
         player.transform.position = initPlayerPosition;
         player.GetComponent<PlayerController>().MakeUndead();
     }

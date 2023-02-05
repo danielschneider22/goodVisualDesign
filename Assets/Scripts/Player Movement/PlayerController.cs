@@ -202,7 +202,7 @@ public class PlayerController : MonoBehaviour
 		if (wallSliding)
         {
 			Debug.Log("is wall sliding");
-			m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y); // new Vector2(m_Rigidbody2D.velocity.x, Mathf.Clamp(m_Rigidbody2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
+			// m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y); // new Vector2(m_Rigidbody2D.velocity.x, Mathf.Clamp(m_Rigidbody2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
 		}
 
 		// Coyote time counter
