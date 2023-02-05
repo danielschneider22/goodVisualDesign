@@ -68,15 +68,15 @@ public class PlayerController : MonoBehaviour
     {
 		if (move > 0)
 		{
-			transform.localEulerAngles = new Vector3(0, 0, -8.07f);
+			// transform.localEulerAngles = new Vector3(0, 0, -8.07f);
 		}
 		else if (move < 0)
 		{
-			transform.localEulerAngles = new Vector3(0, 0, 8.07f);
+			// transform.localEulerAngles = new Vector3(0, 0, 8.07f);
 		}
 		else if (move == 0)
 		{
-			transform.localEulerAngles = new Vector3(0, 0, 0);
+			// transform.localEulerAngles = new Vector3(0, 0, 0);
 		}
 	}
 
