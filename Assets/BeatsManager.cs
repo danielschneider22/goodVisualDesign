@@ -38,6 +38,12 @@ public class BeatsManager : MonoBehaviour
         beatTempo = 60f / beatTempo;
     }
 
+    public bool IsCloseEnoughToBeat()
+    {
+        float beatTime = totalTime / (beatTempo * 2);
+        return Mathf.Abs((int)beatTime - beatTime) <= .3f;
+    }
+
     void Update()
     {
         if (musicTiming != null)
@@ -87,12 +93,6 @@ public class BeatsManager : MonoBehaviour
         OnBeatEvent.Invoke();
         IntroMusic.Post(gameObject);
         musicTiming = "playingIntro";
-
-        foreach(Transform child in moveUpAndDownObjs)
-        {
-            child.GetComponent<MoveUpAndDown>().duration = beatTempo;
-            child.GetComponent<MoveUpAndDown>().enabled = true;
-        }
     }
 
     public void DoPulseLights()
@@ -107,6 +107,14 @@ public class BeatsManager : MonoBehaviour
             {
                 p.TogglePulse();
             }
+        }
+    }
+
+    public void DoMoveUpAndDown()
+    {
+        foreach (Transform child in moveUpAndDownObjs)
+        {
+            child.GetComponent<MoveUpAndDownToRhythm>().DoMoveUpOrDown();
         }
     }
 }
