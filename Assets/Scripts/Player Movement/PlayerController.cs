@@ -41,8 +41,14 @@ public class PlayerController : MonoBehaviour
 	public float wallSlidingSpeed;
 
 	private float move;
+	public bool IsDead;
+	private bool doneStartupBlackScreen;
 
 	public ParticleSystem impact;
+
+	public LevelLoader levelLoader;
+
+	private float deadTime;
 
 	[Header("Events")]
 	[Space]
@@ -64,24 +70,42 @@ public class PlayerController : MonoBehaviour
 		audioManager = FindObjectOfType<AudioManager>();
 	}
 
-    private void LateUpdate()
+	public void MakeDead()
     {
-		if (move > 0)
-		{
-			// transform.localEulerAngles = new Vector3(0, 0, -8.07f);
-		}
-		else if (move < 0)
-		{
-			// transform.localEulerAngles = new Vector3(0, 0, 8.07f);
-		}
-		else if (move == 0)
-		{
-			// transform.localEulerAngles = new Vector3(0, 0, 0);
-		}
+		deadTime = 0f;
+		IsDead = true;
+		animator.SetTrigger("Dead");
+
 	}
+	public void MakeUndead()
+	{
+		deadTime = 0f;
+		IsDead = false;
+		animator.SetTrigger("Undead");
+		doneStartupBlackScreen = false;
+
+	}
+
+    private void Update()
+    {
+        if(IsDead && !doneStartupBlackScreen)
+        {
+			deadTime = deadTime += Time.deltaTime;
+			if(deadTime > 1.5f)
+            {
+				levelLoader.ShowDeathBlackScreenAnimation();
+				doneStartupBlackScreen = true;
+			}
+        }
+    }
+
 
     private void FixedUpdate()
 	{
+		if(IsDead)
+        {
+			return;
+        }
 		if (lastJumpedTimer > 0) { return; };
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
@@ -123,6 +147,10 @@ public class PlayerController : MonoBehaviour
 
 	public void Move(float move, bool jump, bool jumpEnd)
 	{
+		if(IsDead)
+        {
+			return;
+        }
 		this.move = move;
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
@@ -248,6 +276,7 @@ public class PlayerController : MonoBehaviour
 
 	public void IdleWithMusicBounce()
     {
+		if (IsDead) return;
 		animator.SetTrigger("idleWithMusicBounce");
     }
 }

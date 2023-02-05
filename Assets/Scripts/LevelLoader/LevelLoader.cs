@@ -12,9 +12,13 @@ public class LevelLoader : MonoBehaviour
 
     public static bool isDeathAnimation = false;
 
+    public GameObject player;
+    private Vector3 initPlayerPosition;
+
     private void Awake()
     {
-        resetAnimators();
+        // resetAnimators();
+        initPlayerPosition = player.transform.position;
     }
 
     private void resetAnimators()
@@ -55,8 +59,20 @@ public class LevelLoader : MonoBehaviour
 
     public void ReloadLevelDeath()
     {
-        isDeathAnimation = true;
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex, true));
+        player.GetComponent<PlayerController>().MakeDead();
+
+    }
+
+    public void MakePlayerUndead()
+    {
+        player.transform.position = initPlayerPosition;
+        player.GetComponent<PlayerController>().MakeUndead();
+    }
+
+    public void ShowDeathBlackScreenAnimation()
+    {
+        transitionDeath.SetTrigger("start");
+        transitionDeath.enabled = true;
 
     }
 
