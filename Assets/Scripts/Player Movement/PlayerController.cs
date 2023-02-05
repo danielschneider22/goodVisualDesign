@@ -36,7 +36,8 @@ public class PlayerController : MonoBehaviour
 	public SpriteRenderer spriteRenderer;
 
 	bool isTouchingFront;
-	public List<Transform> frontChecks;
+	public List<Transform> frontChecksRight;
+	public List<Transform> frontChecksLeft;
 	bool wallSliding;
 	public float wallSlidingSpeed;
 
@@ -183,13 +184,26 @@ public class PlayerController : MonoBehaviour
 
 		// Wall sliding
 		isTouchingFront = false;
-		foreach (Transform frontCheck in frontChecks)
-		{
-			if (Physics2D.OverlapCircle(frontCheck.position, wall_radius, m_WhatIsGround))
-            {
-				isTouchingFront = true;
-            }
+		if(m_FacingRight)
+        {
+			foreach (Transform frontCheck in frontChecksRight)
+			{
+				if (Physics2D.OverlapCircle(frontCheck.position, wall_radius, m_WhatIsGround))
+				{
+					isTouchingFront = true;
+				}
+			}
+		} else
+        {
+			foreach (Transform frontCheck in frontChecksLeft)
+			{
+				if (Physics2D.OverlapCircle(frontCheck.position, wall_radius, m_WhatIsGround))
+				{
+					isTouchingFront = true;
+				}
+			}
 		}
+		
 		
 		if (isTouchingFront && move != 0 && !m_Grounded)
 		{
@@ -201,8 +215,7 @@ public class PlayerController : MonoBehaviour
 
 		if (wallSliding)
         {
-			Debug.Log("is wall sliding");
-			// m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y); // new Vector2(m_Rigidbody2D.velocity.x, Mathf.Clamp(m_Rigidbody2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
+			m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y); // new Vector2(m_Rigidbody2D.velocity.x, Mathf.Clamp(m_Rigidbody2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
 		}
 
 		// Coyote time counter
