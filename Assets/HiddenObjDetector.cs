@@ -61,15 +61,15 @@ public class HiddenObjDetector : MonoBehaviour
             sensorSpriteRenderer.sprite = sensorSprites[3];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 50)
+        else
         {
             sensorSpriteRenderer.sprite = sensorSprites[4];
             sensorSpriteRenderer.enabled = true;
         }
-        else
+        /*else
         {
             sensorSpriteRenderer.enabled = false;
-        }
+        }*/
         
         Vector3 targ = closestObj.transform.position;
         targ.z = 0f;

@@ -11,8 +11,6 @@ public class BeatsManager : MonoBehaviour
     public TextMeshProUGUI randomText;
     public float beatTempo;
     public AkAmbient BGMusic;
-    public SpriteRenderer image;
-    public bool doAltColor;
     public float totalTime;
     public float lastBeat;
 
@@ -30,6 +28,7 @@ public class BeatsManager : MonoBehaviour
 
     public List<PulseLightWithMusic> pulseLightWithMusicList;
     public Transform torches;
+    public Transform uiTutorials;
     public Transform moveUpAndDownObjs;
 
 
@@ -55,8 +54,6 @@ public class BeatsManager : MonoBehaviour
                 if (Mathf.Abs((int)beatTime - beatTime) <= .05f)
                 {
                     BeatsTimer = 0f;
-                    doAltColor = doAltColor ? false : true;
-                    image.color = doAltColor ? new Color32(33, 158, 188, 255) : new Color32(35, 160, 190, 255);
                     OnBeatEvent.Invoke();
                     lastBeat = totalTime;
                 }
@@ -87,9 +84,6 @@ public class BeatsManager : MonoBehaviour
 
     public void StartMusic()
     {
-        // BGMusic.enabled = true;
-        doAltColor = doAltColor ? false : true;
-        image.color = doAltColor ? new Color32(33, 158, 188, 255) : new Color32(35, 160, 190, 255);
         OnBeatEvent.Invoke();
         IntroMusic.Post(gameObject);
         musicTiming = "playingIntro";
@@ -107,6 +101,10 @@ public class BeatsManager : MonoBehaviour
             {
                 p.TogglePulse();
             }
+        }
+        foreach (Transform child in uiTutorials)
+        {
+            child.GetComponent<PulseLightWithMusic>().TogglePulse();
         }
     }
 
