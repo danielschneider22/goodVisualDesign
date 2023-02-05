@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class TriggerDeath : MonoBehaviour
 {
-    public LevelLoader levelLoader;
+    private LevelLoader levelLoader;
 
-    void Update()
+    private void Start()
     {
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            levelLoader.ReloadLevelDeath();
-        }
+        levelLoader = GameObject.FindObjectOfType<LevelLoader>();
     }
 
-    //When the Primitive collides with the walls, it will reverse direction
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Player")

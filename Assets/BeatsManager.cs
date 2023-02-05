@@ -75,7 +75,7 @@ public class BeatsManager : MonoBehaviour
         } else if(musicTiming == "playingMain")
         {
             mainMusicTimer = mainMusicTimer + Time.deltaTime;
-            if (mainMusicTimer >= 36f)
+            if (mainMusicTimer >= 96f)
             {
                 totalTime = 0f;
                 mainMusicTimer = 0f;
