@@ -16,10 +16,10 @@
 				</Event>
 				<Event Name="Key_Pickup" ID="{9B5E7652-50B7-4CE8-9A7B-73E92DBC65D6}">
 					<ChildrenList>
-						<Action Name="" ID="{E11667C8-DA83-4C94-A1FF-AC710F1DC8C2}" ShortID="717822016">
+						<Action Name="" ID="{B4DA87A3-C3F5-4677-A1F7-142690F4D6A5}" ShortID="93895252">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Key_Pickup" ID="{40C86198-0EF4-4BD9-8776-2FD6A17B929B}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+									<ObjectRef Name="Key_pickup" ID="{2A0E19EA-F0DA-45E0-AF25-4F348BCAAFE6}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -49,10 +49,21 @@
 				</Event>
 				<Event Name="Lava" ID="{1BD95C27-67F6-4239-8EE9-7527DA61B1A0}">
 					<ChildrenList>
-						<Action Name="" ID="{96EFE9D8-B212-42F3-B5A0-040A9BFBFA70}" ShortID="651939674">
+						<Action Name="" ID="{A57165D2-40EB-48C0-99E7-5E681936EFA1}" ShortID="139340778">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Lava" ID="{B173822E-9A98-45DE-B871-3BB3AC51EF64}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+									<ObjectRef Name="Lavaplaylist" ID="{5EB3832F-B4AF-47A1-9EC2-C1AA66546C64}" WorkUnitID="{0FB71C2D-C03B-4E2B-B1FD-0F759C513B38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Robot_Jump" ID="{A727ACF8-2D16-41C0-9BBA-39C40A6D0F10}">
+					<ChildrenList>
+						<Action Name="" ID="{ABBEF82A-7B4E-4650-A5DF-9B2915F5B920}" ShortID="126063253">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robot_Jump" ID="{FA69721B-51F4-4156-84A6-B1EEA9A5D1DC}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

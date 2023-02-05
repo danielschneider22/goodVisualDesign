@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{28969046-EB19-9D1F-09F2-1F1D132F86E3}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{85343B5D-7C17-C514-9459-152382B5CBB2}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
+				<File Id="710664548" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Lava.wav</ShortName>
+					<CachePath>SFX/Lava_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="770275163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17.wav</ShortName>
 					<CachePath>SFX/ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem</CachePath>
@@ -25,17 +29,13 @@
 					<ShortName>LoopMusic1.wav</ShortName>
 					<CachePath>SFX/LoopMusic1_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="988691944" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GameJamSFX\Lava.wav</ShortName>
-					<CachePath>SFX/GameJamSFX/Lava_D79FB2B7.wem</CachePath>
+				<File Id="983199723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GameJamSFX\Key_pickup.wav</ShortName>
+					<CachePath>SFX/GameJamSFX/Key_pickup_10C4C929.wem</CachePath>
 				</File>
 				<File Id="998524798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IntroMusic1.wav</ShortName>
 					<CachePath>SFX/IntroMusic1_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="1042903363" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit.wav</ShortName>
-					<CachePath>SFX/ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -44,14 +44,14 @@
 						<MediaRef Id="770275163"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="761761105" Name="Key_Pickup" DurationType="OneShot" DurationMin="1.1110834" DurationMax="1.1110834">
+				<Event Id="761761105" Name="Key_Pickup" DurationType="OneShot" DurationMin="1.533424" DurationMax="1.533424">
 					<MediaRefs>
-						<MediaRef Id="1042903363"/>
+						<MediaRef Id="983199723"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="540301611" Name="Lava" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="988691944"/>
+						<MediaRef Id="710664548"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="984952705" Name="Music_Intro" DurationType="OneShot" DurationMin="13" DurationMax="13">
@@ -199,5 +199,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E2F09561-B7E4-3F6B-92E4-5840006E4C1D}</FileHash>
+	<FileHash>{6C975AEB-37C9-52F0-4196-C99581192A99}</FileHash>
 </SoundBanksInfo>

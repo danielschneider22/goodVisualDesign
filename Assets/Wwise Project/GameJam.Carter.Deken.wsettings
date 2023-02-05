@@ -10,6 +10,7 @@
 				<Property Name="Event Action List\{43DC6C7E-CD44-4704-A493-8F2C31483717}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6B8D6CD1-D01A-4EE7-A01A-F522D6DD451A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9B5E7652-50B7-4CE8-9A7B-73E92DBC65D6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A727ACF8-2D16-41C0-9BBA-39C40A6D0F10}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CE83B24D-470E-4CCB-927F-F59029D08ACC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F2B4D91C-6956-47B9-A4B2-CC423B31FC81}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F3151622-39E1-4B67-AB41-CFC1268093A8}\x64_Expand States" Type="string" Value=""/>
@@ -36,6 +37,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="cPqQ3TDxwEWslr6u4tXsnRNbpVPHBGBJuOEC8MoxxY4GLT/DVqyISpAHIeDXluu8"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="sgO4iHcLR0+pGOJ0wYWrhg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="Interactive Music\x64_{18E95A01-2BAE-41BB-9659-33DDBF7139AE} - SegmentEditorZoomInfo" Type="string" Value="jJwUVJroIUAAAAAAAADwP5RUrZWcxVBAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{22ACAA66-1CE9-40F8-B95B-B4D29132A412} - SegmentEditorZoomInfo" Type="string" Value="fphOX/lSyT8AAAAAAADwPwAAAAAATHFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{4A26B63E-0AF2-457F-839F-9C6768DCCA54} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAATHFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{54FEF51E-88AA-462F-9224-0848E80D0207} - SegmentEditorZoomInfo" Type="string" Value="4X5a+/Et/z8AAAAAAADwP7TrqJLgTyxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
