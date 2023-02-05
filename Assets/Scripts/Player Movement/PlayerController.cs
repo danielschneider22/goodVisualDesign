@@ -110,6 +110,7 @@ public class PlayerController : MonoBehaviour
 							OnLandEvent.Invoke();
 							animator.SetTrigger("squash");
 						}
+						animator.SetBool("jumping", false);
 						// transform.localScale += new Vector3(1, 1, 1) * Time.deltaTime * 1.5f;
 					}
 					return;
@@ -142,10 +143,14 @@ public class PlayerController : MonoBehaviour
 			{
 				// ... flip the player.
 				Flip();
-			} else if (move == 0 && !jump)
-            {
-				transform.localEulerAngles = new Vector3(0, 0, 0);
 			}
+			if(move != 0)
+            {
+				animator.SetBool("moving", true);
+            } else
+            {
+				animator.SetBool("moving", false);
+            }
 		}
 
 		// Wall sliding
@@ -168,7 +173,8 @@ public class PlayerController : MonoBehaviour
 
 		if (wallSliding)
         {
-			m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, Mathf.Clamp(m_Rigidbody2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
+			Debug.Log("is wall sliding");
+			m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y); // new Vector2(m_Rigidbody2D.velocity.x, Mathf.Clamp(m_Rigidbody2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
 		}
 
 		// Coyote time counter
@@ -211,6 +217,7 @@ public class PlayerController : MonoBehaviour
 			//audioManager.Play("Jump", 0);
 			SomeSound.Post(gameObject);
 			animator.SetTrigger("stretch");
+			animator.SetBool("jumping", true);
 		}
 
 		// Start moving faster if player lets go of space
