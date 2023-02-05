@@ -1,12 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
+	540301611	Lava			\Default Work Unit\Lava	
 	761761105	Key_Pickup			\Default Work Unit\Key_Pickup	
 	984952705	Music_Intro			\Default Work Unit\Music_Intro	
 	2501428482	Footstep_Test			\Default Work Unit\Footstep_Test	
+	3241003010	Robot_Jump			\Default Work Unit\Robot_Jump	
 	3937699135	Music_Loop			\Default Work Unit\Music_Loop	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	770275163	Footstep	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep		54656
+	882817458	Robot_Jump	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\GameJamSFX\Robot_Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Robot_Jump		296496
 	933237735	LoopMusic	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\LoopMusic1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\LoopMusic\LoopMusic		17375496
+	988691944	Lava	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\GameJamSFX\Lava_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Lava		2910836
 	998524798	IntroMusic	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\IntroMusic1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\IntroMusic\IntroMusic		2293296
 	1042903363	Key_Pickup	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Key_Pickup		213424
 

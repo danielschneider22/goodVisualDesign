@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{10855264-2DD9-424F-9B0C-3F3BB0934235}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Carter.Deken\Desktop\"/>
+				<Property Name="Event Action List\{1BD95C27-67F6-4239-8EE9-7527DA61B1A0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{259AC4F2-8A41-4672-B80F-745C52275EAB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{28327046-3196-4302-9066-CEED49CC7FAA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{43DC6C7E-CD44-4704-A493-8F2C31483717}\x64_Expand States" Type="string" Value=""/>
