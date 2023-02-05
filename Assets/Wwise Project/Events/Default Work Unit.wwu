@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Lava" ID="{1BD95C27-67F6-4239-8EE9-7527DA61B1A0}">
+					<ChildrenList>
+						<Action Name="" ID="{96EFE9D8-B212-42F3-B5A0-040A9BFBFA70}" ShortID="651939674">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lava" ID="{B173822E-9A98-45DE-B871-3BB3AC51EF64}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

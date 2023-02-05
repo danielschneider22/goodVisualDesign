@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{E00D2B69-4715-E30A-7637-496AE27DA330}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{28969046-EB19-9D1F-09F2-1F1D132F86E3}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -17,9 +17,17 @@
 					<ShortName>ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17.wav</ShortName>
 					<CachePath>SFX/ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem</CachePath>
 				</File>
+				<File Id="882817458" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GameJamSFX\Robot_Jump.wav</ShortName>
+					<CachePath>SFX/GameJamSFX/Robot_Jump_10C4C929.wem</CachePath>
+				</File>
 				<File Id="933237735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LoopMusic1.wav</ShortName>
 					<CachePath>SFX/LoopMusic1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="988691944" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GameJamSFX\Lava.wav</ShortName>
+					<CachePath>SFX/GameJamSFX/Lava_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="998524798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IntroMusic1.wav</ShortName>
@@ -41,6 +49,11 @@
 						<MediaRef Id="1042903363"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="540301611" Name="Lava" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="988691944"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="984952705" Name="Music_Intro" DurationType="OneShot" DurationMin="13" DurationMax="13">
 					<MediaRefs>
 						<MediaRef Id="998524798"/>
@@ -49,6 +62,11 @@
 				<Event Id="3937699135" Name="Music_Loop" DurationType="OneShot" DurationMin="98.5" DurationMax="98.5">
 					<MediaRefs>
 						<MediaRef Id="933237735"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3241003010" Name="Robot_Jump" DurationType="OneShot" DurationMin="1.6802721" DurationMax="1.6802721">
+					<MediaRefs>
+						<MediaRef Id="882817458"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -181,5 +199,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5E549D4C-059F-77FD-8AA6-9B9534537896}</FileHash>
+	<FileHash>{CE4D7506-8676-24AB-FB3A-A422B3156999}</FileHash>
 </SoundBanksInfo>

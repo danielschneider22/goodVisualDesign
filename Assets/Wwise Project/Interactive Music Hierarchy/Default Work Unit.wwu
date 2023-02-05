@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<MusicSegment Name="IntroMusic" ID="{22ACAA66-1CE9-40F8-B95B-B4D29132A412}" ShortID="5299646">
 					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="13000"/>
+						<Property Name="EndPosition" Type="Real64" Value="13182.6366859979"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

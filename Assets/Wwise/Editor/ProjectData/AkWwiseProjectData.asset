@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1ace06730430de4db56167ed713ca206
     GuidInternal: 
-    m_lastTime: -8585261343028893809
+    m_lastTime: -8585259704531305647
     List:
     - name: General
       guid: b203b888770b474fa918e274c185ab86
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: bd93ed118ea47d4ea9e2eba80b5743e1
     GuidInternal: 
-    m_lastTime: -8585259843814396963
+    m_lastTime: -8585259704542411495
     List:
     - name: Footstep_Test
       guid: f2c49a25418a7246b80f745c52275eab
@@ -392,6 +392,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 52765e9bb750e84c9a7b73e92dbc65d6
       Path: Events\Default Work Unit\Key_Pickup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lava
+      guid: 275cd91bf66739428ee97527da61b1a0
+      id: 540301611
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Lava
+        ObjectType: 3
+        guid: 275cd91bf66739428ee97527da61b1a0
+      Path: Events\Default Work Unit\Lava
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -486,7 +503,7 @@ MonoBehaviour:
     m_lastTime: -8585265634190657647
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000010000000110000001800000019000000
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
