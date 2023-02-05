@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{85343B5D-7C17-C514-9459-152382B5CBB2}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{636479C6-C945-7ED4-11B2-478721FC043F}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -29,6 +29,10 @@
 					<ShortName>LoopMusic1.wav</ShortName>
 					<CachePath>SFX/LoopMusic1_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="938382148" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GameJamSFX\Button_Click.wav</ShortName>
+					<CachePath>SFX/GameJamSFX/Button_Click_10C4C929.wem</CachePath>
+				</File>
 				<File Id="983199723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GameJamSFX\Key_pickup.wav</ShortName>
 					<CachePath>SFX/GameJamSFX/Key_pickup_10C4C929.wem</CachePath>
@@ -39,6 +43,11 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="1.51" DurationMax="1.51">
+					<MediaRefs>
+						<MediaRef Id="938382148"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2501428482" Name="Footstep_Test" DurationType="OneShot" DurationMin="0.28416666" DurationMax="0.28416666">
 					<MediaRefs>
 						<MediaRef Id="770275163"/>
@@ -64,7 +73,7 @@
 						<MediaRef Id="933237735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3241003010" Name="Robot_Jump" DurationType="OneShot" DurationMin="1.6802721" DurationMax="1.6802721">
+				<Event Id="3241003010" Name="Robot_Jump" DurationType="OneShot" DurationMin="1.4969523" DurationMax="1.6802721">
 					<MediaRefs>
 						<MediaRef Id="882817458"/>
 					</MediaRefs>
@@ -199,5 +208,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6C975AEB-37C9-52F0-4196-C99581192A99}</FileHash>
+	<FileHash>{EA04235D-F180-729C-DB8E-E0F58B940B5F}</FileHash>
 </SoundBanksInfo>

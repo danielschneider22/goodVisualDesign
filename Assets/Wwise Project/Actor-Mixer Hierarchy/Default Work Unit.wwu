@@ -138,6 +138,20 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Robot_Jump" ID="{FA69721B-51F4-4156-84A6-B1EEA9A5D1DC}" ShortID="144861532">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C931AE9C-CCC3-4658-B91A-624B39A822FC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E19698F9-3506-4A7C-B3F1-C8AC917C0088}"/>

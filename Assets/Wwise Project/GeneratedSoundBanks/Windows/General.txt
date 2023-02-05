@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	540301611	Lava			\Default Work Unit\Lava	
 	761761105	Key_Pickup			\Default Work Unit\Key_Pickup	
+	814543256	Button_Click			\Default Work Unit\Button_Click	
 	984952705	Music_Intro			\Default Work Unit\Music_Intro	
 	2501428482	Footstep_Test			\Default Work Unit\Footstep_Test	
 	3241003010	Robot_Jump			\Default Work Unit\Robot_Jump	
@@ -11,6 +12,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	770275163	Footstep	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep		54656
 	882817458	Robot_Jump	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\GameJamSFX\Robot_Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Robot_Jump		296496
 	933237735	LoopMusic	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\LoopMusic1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\LoopMusic\LoopMusic		17375496
+	938382148	Button_Click	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\GameJamSFX\Button_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Button_Click		266460
 	983199723	Key_pickup	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\GameJamSFX\Key_pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Key_pickup		270592
 	998524798	IntroMusic	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\IntroMusic1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\IntroMusic\IntroMusic		2293296
 

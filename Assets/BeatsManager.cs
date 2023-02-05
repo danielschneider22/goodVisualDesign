@@ -30,6 +30,7 @@ public class BeatsManager : MonoBehaviour
     public Transform torches;
     public Transform uiTutorials;
     public Transform moveUpAndDownObjs;
+    public AK.Wwise.Event ClickSound;
 
 
     private void Start()
@@ -83,7 +84,9 @@ public class BeatsManager : MonoBehaviour
     }
 
     public void StartMusic()
+    
     {
+        ClickSound.Post(gameObject);
         OnBeatEvent.Invoke();
         IntroMusic.Post(gameObject);
         musicTiming = "playingIntro";

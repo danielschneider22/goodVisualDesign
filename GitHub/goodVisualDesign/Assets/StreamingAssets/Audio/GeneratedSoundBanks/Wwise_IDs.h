@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BUTTON_CLICK = 814543256U;
         static const AkUniqueID FOOTSTEP_TEST = 2501428482U;
         static const AkUniqueID KEY_PICKUP = 761761105U;
         static const AkUniqueID LAVA = 540301611U;
