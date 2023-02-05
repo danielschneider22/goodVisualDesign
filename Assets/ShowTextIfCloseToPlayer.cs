@@ -22,13 +22,13 @@ public class ShowTextIfCloseToPlayer : MonoBehaviour
     public void Update()
     {
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance < 40 && !isShowing)
+        if (distance < 38 && !isShowing)
         {
             isShowing = true;
             timeElapsed = 0f;
             startValueColor = 0;
         }
-        else if (distance > 40 && isShowing)
+        else if (distance > 38 && isShowing)
         {
             isShowing = false;
             timeElapsed = 0f;
