@@ -9,21 +9,21 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{493F53BF-4C63-FB1F-DFAA-1A98FAA61A80}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{E00D2B69-4715-E30A-7637-496AE27DA330}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
-				<File Id="353574437" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Main_Music_Loop_160BPM.wav</ShortName>
-					<CachePath>SFX/Main_Music_Loop_160BPM_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="443311452" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Music_Intro_Loop_160BPM.wav</ShortName>
-					<CachePath>SFX/Music_Intro_Loop_160BPM_D79FB2B7.wem</CachePath>
-				</File>
 				<File Id="770275163" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17.wav</ShortName>
 					<CachePath>SFX/ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem</CachePath>
+				</File>
+				<File Id="933237735" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LoopMusic1.wav</ShortName>
+					<CachePath>SFX/LoopMusic1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="998524798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>IntroMusic1.wav</ShortName>
+					<CachePath>SFX/IntroMusic1_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="1042903363" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Classic_Coin_4_Mobile_App_Game_FX_Sound_Magic_Musical_Element_Transition_Chord_Simple_Hit.wav</ShortName>
@@ -43,12 +43,12 @@
 				</Event>
 				<Event Id="984952705" Name="Music_Intro" DurationType="OneShot" DurationMin="13" DurationMax="13">
 					<MediaRefs>
-						<MediaRef Id="443311452"/>
+						<MediaRef Id="998524798"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3937699135" Name="Music_Loop" DurationType="OneShot" DurationMin="37.17308" DurationMax="37.17308">
+				<Event Id="3937699135" Name="Music_Loop" DurationType="OneShot" DurationMin="98.5" DurationMax="98.5">
 					<MediaRefs>
-						<MediaRef Id="353574437"/>
+						<MediaRef Id="933237735"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -181,5 +181,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{61260C83-B6E6-D25D-211E-4588EDC82716}</FileHash>
+	<FileHash>{B1F99C0D-7C23-7D7E-7BC8-64CD47FDC213}</FileHash>
 </SoundBanksInfo>
