@@ -60,6 +60,10 @@ public class BeatsManager : MonoBehaviour
         musicTiming = null;
         beatTempo = 60f / beatTempo;
         gemManager = GameObject.FindObjectOfType<GemManager>();
+        if(SceneManager.GetActiveScene().buildIndex != 0)
+        {
+            StartMusic();
+        }
     }
 
     public bool IsCloseEnoughToBeat()
@@ -137,7 +141,7 @@ public class BeatsManager : MonoBehaviour
             introTimer = introTimer + Time.deltaTime;
             if (introTimer >= 12f)
             {
-                MainMusic.Post(gameObject);
+                musicId =  MainMusic.Post(gameObject);
                 musicTiming = "playingMain";
                 totalTime = 0f;
                 lastBeat = 0f;
@@ -166,17 +170,15 @@ public class BeatsManager : MonoBehaviour
     public void StartMusic()
     
     {
-        // uint playingId = AkSoundEngine.PostEvent(eventName, gameobject);
-        
-        ClickSound.Post(gameObject);
-        OnBeatEvent.Invoke();
         if(SceneManager.GetActiveScene().buildIndex == 0)
         {
+            ClickSound.Post(gameObject);
+            OnBeatEvent.Invoke();
             musicId = AmbientMusic.Post(gameObject);
             musicTiming = "playingMain";
         } else
         {
-            IntroMusic.Post(gameObject);
+            musicId = IntroMusic.Post(gameObject);
             musicTiming = "playingIntro";
         }
         

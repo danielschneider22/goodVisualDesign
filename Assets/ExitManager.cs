@@ -24,7 +24,7 @@ public class ExitManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Player" && gemManager.totalNumGems == gemManager.gemsCollected)
+        if (collision.name == "Player" && gemManager.totalNumGems <= gemManager.gemsCollected)
         {
             canGo = true;
         }

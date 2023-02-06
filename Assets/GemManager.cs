@@ -32,7 +32,7 @@ public class GemManager : MonoBehaviour
 
     private void UpdateText()
     {
-        if(totalNumGems - gemsCollected == 0)
+        if(totalNumGems - gemsCollected <= 0)
         {
             exitText.text = "Press E\n To go to next level!";
         } else
@@ -79,7 +79,7 @@ public class GemManager : MonoBehaviour
                 Destroy(activeGem.gameObject);
                 activeGem = null;
 
-                if (totalNumGems == gemsCollected)
+                if (totalNumGems <= gemsCollected)
                 {
                     DoorOpen.Post(gameObject);
                     doorTop.sprite = topOpenDoor;
