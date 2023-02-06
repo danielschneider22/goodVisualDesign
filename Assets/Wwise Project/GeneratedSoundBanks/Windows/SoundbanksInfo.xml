@@ -9,10 +9,30 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{636479C6-C945-7ED4-11B2-478721FC043F}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{829598B0-DA51-18A6-E2B0-7002F6F2CD95}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
+				<File Id="127534707" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Signal_Med_Tuned.wav</ShortName>
+					<CachePath>SFX/Signal_Med_Tuned_10C4C929.wem</CachePath>
+				</File>
+				<File Id="144558351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Signal_Med.wav</ShortName>
+					<CachePath>SFX/Signal_Med_10C4C929.wem</CachePath>
+				</File>
+				<File Id="558657834" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Signal_Close.wav</ShortName>
+					<CachePath>SFX/Signal_Close_10C4C929.wem</CachePath>
+				</File>
+				<File Id="615107530" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Signal_Far.wav</ShortName>
+					<CachePath>SFX/Signal_Far_10C4C929.wem</CachePath>
+				</File>
+				<File Id="667651215" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Door_Open.wav</ShortName>
+					<CachePath>SFX/Door_Open_10C4C929.wem</CachePath>
+				</File>
 				<File Id="710664548" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Lava.wav</ShortName>
 					<CachePath>SFX/Lava_D79FB2B7.wem</CachePath>
@@ -21,9 +41,21 @@
 					<ShortName>ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17.wav</ShortName>
 					<CachePath>SFX/ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem</CachePath>
 				</File>
+				<File Id="773199226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Door_Close.wav</ShortName>
+					<CachePath>SFX/Door_Close_10C4C929.wem</CachePath>
+				</File>
+				<File Id="819464491" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Victory_Music.wav</ShortName>
+					<CachePath>SFX/Victory_Music_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="882817458" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GameJamSFX\Robot_Jump.wav</ShortName>
 					<CachePath>SFX/GameJamSFX/Robot_Jump_10C4C929.wem</CachePath>
+				</File>
+				<File Id="918579418" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Tutorial_Music.wav</ShortName>
+					<CachePath>SFX/Tutorial_Music_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="933237735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LoopMusic1.wav</ShortName>
@@ -46,6 +78,16 @@
 				<Event Id="814543256" Name="Button_Click" DurationType="OneShot" DurationMin="1.51" DurationMax="1.51">
 					<MediaRefs>
 						<MediaRef Id="938382148"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="128625444" Name="Door_Close" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="773199226"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="535830432" Name="Door_Open" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="667651215"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2501428482" Name="Footstep_Test" DurationType="OneShot" DurationMin="0.28416666" DurationMax="0.28416666">
@@ -76,6 +118,36 @@
 				<Event Id="3241003010" Name="Robot_Jump" DurationType="OneShot" DurationMin="1.4969523" DurationMax="1.6802721">
 					<MediaRefs>
 						<MediaRef Id="882817458"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4101131940" Name="Signal_Close" DurationType="OneShot" DurationMin="12" DurationMax="12">
+					<MediaRefs>
+						<MediaRef Id="558657834"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3762455923" Name="Signal_Far" DurationType="OneShot" DurationMin="10.5" DurationMax="10.5">
+					<MediaRefs>
+						<MediaRef Id="615107530"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3291255546" Name="Signal_Med" DurationType="OneShot" DurationMin="12" DurationMax="12">
+					<MediaRefs>
+						<MediaRef Id="144558351"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3128087001" Name="Signal_Med_Tuned" DurationType="OneShot" DurationMin="12" DurationMax="12">
+					<MediaRefs>
+						<MediaRef Id="127534707"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2464646960" Name="TutorialMusic" DurationType="OneShot" DurationMin="73" DurationMax="73">
+					<MediaRefs>
+						<MediaRef Id="918579418"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2539955706" Name="VictoryMusic" DurationType="OneShot" DurationMin="39.937504" DurationMax="39.937504">
+					<MediaRefs>
+						<MediaRef Id="819464491"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -208,5 +280,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EA04235D-F180-729C-DB8E-E0F58B940B5F}</FileHash>
+	<FileHash>{402D2400-9ED4-DFDB-0F0D-7F9CD9B231A8}</FileHash>
 </SoundBanksInfo>

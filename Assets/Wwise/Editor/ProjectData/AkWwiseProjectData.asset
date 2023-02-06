@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 1ace06730430de4db56167ed713ca206
     GuidInternal: 
-    m_lastTime: -8585259696468422074
+    m_lastTime: -8585259581392730434
     List:
     - name: General
       guid: b203b888770b474fa918e274c185ab86
@@ -359,8 +359,59 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: bd93ed118ea47d4ea9e2eba80b5743e1
     GuidInternal: 
-    m_lastTime: -8585259693215633783
+    m_lastTime: -8585259581392780302
     List:
+    - name: Button_Click
+      guid: 21a2cb888efd0e42ab584e92415bb942
+      id: 814543256
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Button_Click
+        ObjectType: 3
+        guid: 21a2cb888efd0e42ab584e92415bb942
+      Path: Events\Default Work Unit\Button_Click
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Door_Close
+      guid: 5ca0dab4fa472440bd072bc7991eb3fc
+      id: 128625444
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Door_Close
+        ObjectType: 3
+        guid: 5ca0dab4fa472440bd072bc7991eb3fc
+      Path: Events\Default Work Unit\Door_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Door_Open
+      guid: 654886393478dd4c947864c613c30bd7
+      id: 535830432
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Door_Open
+        ObjectType: 3
+        guid: 654886393478dd4c947864c613c30bd7
+      Path: Events\Default Work Unit\Door_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Footstep_Test
       guid: f2c49a25418a7246b80f745c52275eab
       id: 2501428482
@@ -463,6 +514,108 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Signal_Close
+      guid: 136280238b26f14abd84c5dc0dcbe722
+      id: 4101131940
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Signal_Close
+        ObjectType: 3
+        guid: 136280238b26f14abd84c5dc0dcbe722
+      Path: Events\Default Work Unit\Signal_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Signal_Far
+      guid: 802b8067cc47114980318bfe7e9ecde5
+      id: 3762455923
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Signal_Far
+        ObjectType: 3
+        guid: 802b8067cc47114980318bfe7e9ecde5
+      Path: Events\Default Work Unit\Signal_Far
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Signal_Med
+      guid: f5308d0e94eecb4a8054bc30a62a7e97
+      id: 3291255546
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Signal_Med
+        ObjectType: 3
+        guid: f5308d0e94eecb4a8054bc30a62a7e97
+      Path: Events\Default Work Unit\Signal_Med
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Signal_Med_Tuned
+      guid: 19b5148a4beaf84286529f1aee278c8a
+      id: 3128087001
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: Signal_Med_Tuned
+        ObjectType: 3
+        guid: 19b5148a4beaf84286529f1aee278c8a
+      Path: Events\Default Work Unit\Signal_Med_Tuned
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TutorialMusic
+      guid: baf8007c2563354f9eb846cddc2d9025
+      id: 2464646960
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: TutorialMusic
+        ObjectType: 3
+        guid: baf8007c2563354f9eb846cddc2d9025
+      Path: Events\Default Work Unit\TutorialMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VictoryMusic
+      guid: b7eb11aff48a2448848000bfb0ac2fe8
+      id: 2539955706
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd93ed118ea47d4ea9e2eba80b5743e1
+      - ElementName: VictoryMusic
+        ObjectType: 3
+        guid: b7eb11aff48a2448848000bfb0ac2fe8
+      Path: Events\Default Work Unit\VictoryMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -520,7 +673,7 @@ MonoBehaviour:
     m_lastTime: -8585273665165941673
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

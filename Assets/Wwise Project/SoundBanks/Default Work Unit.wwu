@@ -5,12 +5,21 @@
 			<ChildrenList>
 				<SoundBank Name="General" ID="{88B803B2-0B77-4F47-A918-E274C185AB86}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Door_Close" ID="{B4DAA05C-47FA-4024-BD07-2BC7991EB3FC}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Robot_Jump" ID="{A727ACF8-2D16-41C0-9BBA-39C40A6D0F10}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Button_Click" ID="{88CBA221-FD8E-420E-AB58-4E92415BB942}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Lava" ID="{1BD95C27-67F6-4239-8EE9-7527DA61B1A0}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Signal_Med_Tuned" ID="{8A14B519-EA4B-42F8-8652-9F1AEE278C8A}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Intro" ID="{28327046-3196-4302-9066-CEED49CC7FAA}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Test" ID="{259AC4F2-8A41-4672-B80F-745C52275EAB}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music_Loop" ID="{43DC6C7E-CD44-4704-A493-8F2C31483717}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="VictoryMusic" ID="{AF11EBB7-8AF4-4824-8480-00BFB0AC2FE8}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Signal_Far" ID="{67802B80-47CC-4911-8031-8BFE7E9ECDE5}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Signal_Med" ID="{0E8D30F5-EE94-4ACB-8054-BC30A62A7E97}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Signal_Close" ID="{23806213-268B-4AF1-BD84-C5DC0DCBE722}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Door_Open" ID="{39864865-7834-4CDD-9478-64C613C30BD7}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Key_Pickup" ID="{9B5E7652-50B7-4CE8-9A7B-73E92DBC65D6}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TutorialMusic" ID="{7C00F8BA-6325-4F35-9EB8-46CDDC2D9025}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -1,16 +1,32 @@
 Event	ID	Name			Wwise Object Path	Notes
+	128625444	Door_Close			\Default Work Unit\Door_Close	
+	535830432	Door_Open			\Default Work Unit\Door_Open	
 	540301611	Lava			\Default Work Unit\Lava	
 	761761105	Key_Pickup			\Default Work Unit\Key_Pickup	
 	814543256	Button_Click			\Default Work Unit\Button_Click	
 	984952705	Music_Intro			\Default Work Unit\Music_Intro	
+	2464646960	TutorialMusic			\Default Work Unit\TutorialMusic	
 	2501428482	Footstep_Test			\Default Work Unit\Footstep_Test	
+	2539955706	VictoryMusic			\Default Work Unit\VictoryMusic	
+	3128087001	Signal_Med_Tuned			\Default Work Unit\Signal_Med_Tuned	
 	3241003010	Robot_Jump			\Default Work Unit\Robot_Jump	
+	3291255546	Signal_Med			\Default Work Unit\Signal_Med	
+	3762455923	Signal_Far			\Default Work Unit\Signal_Far	
 	3937699135	Music_Loop			\Default Work Unit\Music_Loop	
+	4101131940	Signal_Close			\Default Work Unit\Signal_Close	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	127534707	Signal_Med_Tuned	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Signal_Med_Tuned_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Signal_Med_Tuned		2116896
+	144558351	Signal_Med	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Signal_Med_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Signal_Med		2116896
+	558657834	Signal_Close	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Signal_Close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Signal_Close		2116896
+	615107530	Signal_Far	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Signal_Far_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Signal_Far		1852296
+	667651215	Door_Open	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Door_Open_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Open		176496
 	710664548	Lava	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Lava_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Lavaplaylist\LavaLoop\Lava		2910836
 	770275163	Footstep	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\ESM_DGF_fx_foley_footstep_concrete_soldier_run_fast_rubble_tactical_pavement_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footstep		54656
+	773199226	Door_Close	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Door_Close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door_Close		176496
+	819464491	VictoryMusic	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Victory_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\VictoryMusic\VictoryMusic		7045072
 	882817458	Robot_Jump	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\GameJamSFX\Robot_Jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Robot_Jump		296496
+	918579418	TutorialMusic	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\Tutorial_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TutorialMusic\TutorialMusic		12877296
 	933237735	LoopMusic	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\LoopMusic1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\LoopMusic\LoopMusic		17375496
 	938382148	Button_Click	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\GameJamSFX\Button_Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Button_Click		266460
 	983199723	Key_pickup	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Windows\SFX\GameJamSFX\Key_pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Key_pickup		270592

@@ -69,6 +69,105 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Button_Click" ID="{88CBA221-FD8E-420E-AB58-4E92415BB942}">
+					<ChildrenList>
+						<Action Name="" ID="{A7BFA75E-E63C-4356-B14C-698BEDF87102}" ShortID="479284318">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button_Click" ID="{13BCFEA6-F74E-4A7D-B892-3C025294E8B8}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TutorialMusic" ID="{7C00F8BA-6325-4F35-9EB8-46CDDC2D9025}">
+					<ChildrenList>
+						<Action Name="" ID="{24E7A6C4-EA7C-4F5C-906D-3A90C1C5B4F9}" ShortID="180902500">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TutorialMusic" ID="{7F73E86F-63A5-4D2D-A444-7D4F825D3CC3}" WorkUnitID="{0FB71C2D-C03B-4E2B-B1FD-0F759C513B38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VictoryMusic" ID="{AF11EBB7-8AF4-4824-8480-00BFB0AC2FE8}">
+					<ChildrenList>
+						<Action Name="" ID="{EFB43F5E-4384-4EC3-B65D-6F525B01ADEB}" ShortID="168245875">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VictoryMusic" ID="{C76C5938-667C-452A-BE5C-48EEFD669F49}" WorkUnitID="{0FB71C2D-C03B-4E2B-B1FD-0F759C513B38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Signal_Close" ID="{23806213-268B-4AF1-BD84-C5DC0DCBE722}">
+					<ChildrenList>
+						<Action Name="" ID="{18E13EA0-72EC-486F-8F7B-D9642965A4CB}" ShortID="681923049">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Signal_Close" ID="{245ADF07-40E6-4AAC-A54C-05EEA8D9FD93}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Signal_Far" ID="{67802B80-47CC-4911-8031-8BFE7E9ECDE5}">
+					<ChildrenList>
+						<Action Name="" ID="{42BEE8D4-B127-4164-92F9-502E6B12AD04}" ShortID="359796033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Signal_Far" ID="{3F61FCBE-BBB6-4F02-8969-0C3323EEA00E}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Signal_Med" ID="{0E8D30F5-EE94-4ACB-8054-BC30A62A7E97}">
+					<ChildrenList>
+						<Action Name="" ID="{5B2BCBF2-AEE8-4EDC-A802-5F89E637F7A0}" ShortID="264549783">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Signal_Med" ID="{BFEF84AB-7ACB-4929-A1DE-1C485AF3836E}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Signal_Med_Tuned" ID="{8A14B519-EA4B-42F8-8652-9F1AEE278C8A}">
+					<ChildrenList>
+						<Action Name="" ID="{92F70695-B8AC-413C-8084-5EB4916B3973}" ShortID="714784781">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Signal_Med_Tuned" ID="{36CE4BC1-6973-41C7-BC3C-17768B5C5250}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Door_Close" ID="{B4DAA05C-47FA-4024-BD07-2BC7991EB3FC}">
+					<ChildrenList>
+						<Action Name="" ID="{B8526C3A-0779-4F3F-A887-9419B713545A}" ShortID="279906443">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Close" ID="{9B925DB4-967B-4D8D-B2DC-3D183C0C0BE4}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Door_Open" ID="{39864865-7834-4CDD-9478-64C613C30BD7}">
+					<ChildrenList>
+						<Action Name="" ID="{C409678E-70F0-4AD2-A30E-19FD99F6FF53}" ShortID="174959030">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Open" ID="{C9469D92-9B3C-48B9-9DA5-884387969687}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

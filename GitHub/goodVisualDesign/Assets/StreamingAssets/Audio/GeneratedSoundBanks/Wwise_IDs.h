@@ -14,12 +14,20 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BUTTON_CLICK = 814543256U;
+        static const AkUniqueID DOOR_CLOSE = 128625444U;
+        static const AkUniqueID DOOR_OPEN = 535830432U;
         static const AkUniqueID FOOTSTEP_TEST = 2501428482U;
         static const AkUniqueID KEY_PICKUP = 761761105U;
         static const AkUniqueID LAVA = 540301611U;
         static const AkUniqueID MUSIC_INTRO = 984952705U;
         static const AkUniqueID MUSIC_LOOP = 3937699135U;
         static const AkUniqueID ROBOT_JUMP = 3241003010U;
+        static const AkUniqueID SIGNAL_CLOSE = 4101131940U;
+        static const AkUniqueID SIGNAL_FAR = 3762455923U;
+        static const AkUniqueID SIGNAL_MED = 3291255546U;
+        static const AkUniqueID SIGNAL_MED_TUNED = 3128087001U;
+        static const AkUniqueID TUTORIALMUSIC = 2464646960U;
+        static const AkUniqueID VICTORYMUSIC = 2539955706U;
     } // namespace EVENTS
 
     namespace BANKS
