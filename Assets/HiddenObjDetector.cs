@@ -23,10 +23,13 @@ public class HiddenObjDetector : MonoBehaviour
 
     Color32 startRendererColor;
 
+    private GemManager gemManager;
+
     private void Start()
     {
         regularSensorX = sensorSpriteRenderer.transform.localScale.x;
         startRendererColor = sensorSpriteRenderer.color;
+        gemManager = GameObject.FindObjectOfType<GemManager>();
     }
     private void Update()
     {
@@ -34,22 +37,28 @@ public class HiddenObjDetector : MonoBehaviour
         GameObject closestObj = null;
         foreach(Transform child in listOfHiddenObjs)
         {
-            float distance = Vector3.Distance(transform.position, child.position);
-            if(distance < minDist)
+            if(!child.GetComponent<CollectCoin>().isDestroyed)
             {
-                minDist = distance;
-                closestObj = child.gameObject;
+                float distance = Vector3.Distance(transform.position, child.position);
+                if (distance < minDist)
+                {
+                    minDist = distance;
+                    closestObj = child.gameObject;
+                }
             }
+            
         }
         if(minDist < 17)
         {
             sensorSpriteRenderer.sprite = sensorSprites[0];
             sensorSpriteRenderer.enabled = true;
+            gemManager.ShowMiniGame(closestObj.GetComponent<CollectCoin>());
         }
         else if (minDist < 25)
         {
             sensorSpriteRenderer.sprite = sensorSprites[1];
             sensorSpriteRenderer.enabled = true;
+            gemManager.HideMiniGame();
         }
         else if (minDist < 32)
         {

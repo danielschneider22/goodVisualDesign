@@ -51,6 +51,12 @@ public class PlayerController : MonoBehaviour
 
 	private float deadTime;
 
+	public GameObject pickAxe;
+	public GameObject pickAxeTurned;
+	public GameObject sensor;
+
+	public bool isMining = false;
+
 	[Header("Events")]
 	[Space]
 
@@ -71,8 +77,53 @@ public class PlayerController : MonoBehaviour
 		audioManager = FindObjectOfType<AudioManager>();
 	}
 
+	public void MakeMining()
+    {
+		sensor.SetActive(false);
+		// animator.SetBool("moving", false);
+		//animator.SetBool("jumping", false);
+		pickAxe.SetActive(true);
+		pickAxeTurned.SetActive(false);
+		if (m_FacingRight)
+        {
+			animator.SetTrigger("mining");
+        } else
+        {
+			animator.SetTrigger("miningleft");
+		}
+		isMining = true;
+	}
+	public void SuccessMine()
+	{
+
+		animator.SetTrigger("miningsuccess");
+
+	}
+	public void FailMine()
+	{
+
+		animator.SetTrigger("miningfail");
+
+	}
+	public void StopMining()
+	{
+		sensor.SetActive(true);
+		animator.SetTrigger("donemining");
+		if (m_FacingRight)
+		{
+			pickAxe.SetActive(true);
+			pickAxeTurned.SetActive(false);
+		}
+		else
+		{
+			pickAxe.SetActive(false);
+			pickAxeTurned.SetActive(true);
+		}
+	}
+
 	public void MakeDead()
     {
+		StopMining();
 		deadTime = 0f;
 		IsDead = true;
 		animator.SetTrigger("Dead");
@@ -151,6 +202,10 @@ public class PlayerController : MonoBehaviour
 		if(IsDead)
         {
 			return;
+        }
+		if(isMining && move != 0 || jump && isMining)
+        {
+			StopMining();
         }
 		this.move = move;
 		//only control the player if grounded or airControl is turned on
@@ -285,11 +340,20 @@ public class PlayerController : MonoBehaviour
 		m_FacingRight = !m_FacingRight;
 
 		spriteRenderer.flipX = !spriteRenderer.flipX;
+		if(m_FacingRight)
+        {
+			pickAxe.SetActive(true);
+			pickAxeTurned.SetActive(false);
+		} else
+        {
+			pickAxe.SetActive(false);
+			pickAxeTurned.SetActive(true);
+		}
 	}
 
 	public void IdleWithMusicBounce()
     {
-		if (IsDead) return;
+		if (IsDead || isMining) return;
 		animator.SetTrigger("idleWithMusicBounce");
     }
 }

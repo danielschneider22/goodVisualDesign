@@ -32,7 +32,7 @@ public class BeatsManager : MonoBehaviour
     public Transform moveUpAndDownObjs;
     public AK.Wwise.Event ClickSound;
 
-    public bool mineGameActive;
+    public GameObject MineGameObj;
     public Transform mineGameStartPos;
     public Transform mineGameFinishPos;
     public Transform mineGameFinishPos2;
@@ -41,11 +41,16 @@ public class BeatsManager : MonoBehaviour
     public int notesPass;
     public GameObject centerCircle;
 
+    public bool isSuccessTime;
+
+    public PlayerController playerController;
+    private GemManager gemManager;
+
 
     private void Start()
     {
         beatTempo = 60f / beatTempo;
-        mineGameActive = true;
+        gemManager = GameObject.FindObjectOfType<GemManager>();
     }
 
     public bool IsCloseEnoughToBeat()
@@ -72,12 +77,15 @@ public class BeatsManager : MonoBehaviour
         {
             note.GetComponent<Image>().color = Color.green;
             note2.GetComponent<Image>().color = Color.red;
+            isSuccessTime = true;
         } else if (proportionComplete < .25f) {
             note2.GetComponent<Image>().color = Color.green;
             note.GetComponent<Image>().color = Color.red;
+            isSuccessTime = true;
         }
         else
         {
+            isSuccessTime = false;
             note.GetComponent<Image>().color = Color.red;
             note2.GetComponent<Image>().color = Color.red;
         }
@@ -85,6 +93,18 @@ public class BeatsManager : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.E) && MineGameObj.activeSelf)
+        {
+            playerController.MakeMining();
+            if(isSuccessTime)
+            {
+                playerController.SuccessMine();
+                gemManager.HadSuccess();
+            } else
+            {
+                playerController.FailMine();
+            }
+        }
         if (musicTiming != null)
         {
             totalTime = totalTime + Time.deltaTime;
@@ -98,7 +118,7 @@ public class BeatsManager : MonoBehaviour
                     lastBeat = totalTime;
                 }
             }
-            if(mineGameActive)
+            if(MineGameObj.activeSelf)
             {
                 PositionNotes();
             }
