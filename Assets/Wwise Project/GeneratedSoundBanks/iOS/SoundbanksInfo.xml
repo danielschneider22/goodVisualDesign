@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{BB6681E7-5EFA-5EF5-E127-305F1C7AB3A2}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{C7A5B071-0775-72B7-08EC-D9CDA7100479}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -20,6 +20,14 @@
 				<File Id="144558351" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Signal_Med.wav</ShortName>
 					<CachePath>SFX/Signal_Med_10C4C929.wem</CachePath>
+				</File>
+				<File Id="420510777" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pickaxe_rock_break.wav</ShortName>
+					<CachePath>SFX/Pickaxe_rock_break_10C4C929.wem</CachePath>
+				</File>
+				<File Id="461170089" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pickaxe_Hit1.wav</ShortName>
+					<CachePath>SFX/Pickaxe_Hit1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="548913708" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Robot_Jump2.wav</ShortName>
@@ -113,6 +121,16 @@
 				<Event Id="3937699135" Name="Music_Loop" DurationType="OneShot" DurationMin="98.5" DurationMax="98.5">
 					<MediaRefs>
 						<MediaRef Id="933237735"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="85039096" Name="Pickaxe_Hit" DurationType="OneShot" DurationMin="0.8888889" DurationMax="0.8888889">
+					<MediaRefs>
+						<MediaRef Id="461170089"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="946098259" Name="Pickaxe_Rock_Smash" DurationType="OneShot" DurationMin="0.8888889" DurationMax="0.8888889">
+					<MediaRefs>
+						<MediaRef Id="420510777"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3241003010" Name="Robot_Jump" DurationType="OneShot" DurationMin="1.5859655" DurationMax="1.6802721">
@@ -280,5 +298,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9309E5C6-139C-4F97-5C4B-4418FF6A187D}</FileHash>
+	<FileHash>{2144442C-ABC5-6D52-416E-E37CC80365EB}</FileHash>
 </SoundBanksInfo>

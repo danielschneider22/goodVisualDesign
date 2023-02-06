@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID LAVA = 540301611U;
         static const AkUniqueID MUSIC_INTRO = 984952705U;
         static const AkUniqueID MUSIC_LOOP = 3937699135U;
+        static const AkUniqueID PICKAXE_HIT = 85039096U;
+        static const AkUniqueID PICKAXE_ROCK_SMASH = 946098259U;
         static const AkUniqueID ROBOT_JUMP = 3241003010U;
         static const AkUniqueID SIGNAL_CLOSE = 4101131940U;
         static const AkUniqueID SIGNAL_FAR = 3762455923U;

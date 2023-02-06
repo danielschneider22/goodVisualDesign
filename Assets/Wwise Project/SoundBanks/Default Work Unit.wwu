@@ -15,11 +15,13 @@
 						<ObjectRef Name="Music_Loop" ID="{43DC6C7E-CD44-4704-A493-8F2C31483717}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="VictoryMusic" ID="{AF11EBB7-8AF4-4824-8480-00BFB0AC2FE8}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Signal_Far" ID="{67802B80-47CC-4911-8031-8BFE7E9ECDE5}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pickaxe_Hit" ID="{BA7CFF25-4453-4A0B-9205-49E0BC8F54FC}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Signal_Med" ID="{0E8D30F5-EE94-4ACB-8054-BC30A62A7E97}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Signal_Close" ID="{23806213-268B-4AF1-BD84-C5DC0DCBE722}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Door_Open" ID="{39864865-7834-4CDD-9478-64C613C30BD7}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Key_Pickup" ID="{9B5E7652-50B7-4CE8-9A7B-73E92DBC65D6}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TutorialMusic" ID="{7C00F8BA-6325-4F35-9EB8-46CDDC2D9025}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pickaxe_Rock_Smash" ID="{E2BD3EC5-2BB4-4F3F-B2E3-9FCBC84DA6B8}" WorkUnitID="{11ED93BD-A48E-4E7D-A9E2-EBA80B5743E1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

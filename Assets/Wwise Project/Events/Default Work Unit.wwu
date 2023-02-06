@@ -168,6 +168,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pickaxe_Hit" ID="{BA7CFF25-4453-4A0B-9205-49E0BC8F54FC}">
+					<ChildrenList>
+						<Action Name="" ID="{9645E56B-1D4B-4639-8FF8-A913A8594B6D}" ShortID="916074494">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pickaxe_Hit" ID="{5C6120C5-3799-45B5-886C-9BE51CE31E96}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pickaxe_Rock_Smash" ID="{E2BD3EC5-2BB4-4F3F-B2E3-9FCBC84DA6B8}">
+					<ChildrenList>
+						<Action Name="" ID="{880F85A1-097E-45C5-ADEC-D5EBFC120F1F}" ShortID="404727549">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pickaxe_Rock_Smash" ID="{F0B5FA02-D263-4691-8D46-4808F69DF562}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,9 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
+	85039096	Pickaxe_Hit			\Default Work Unit\Pickaxe_Hit	
 	128625444	Door_Close			\Default Work Unit\Door_Close	
 	535830432	Door_Open			\Default Work Unit\Door_Open	
 	540301611	Lava			\Default Work Unit\Lava	
 	761761105	Key_Pickup			\Default Work Unit\Key_Pickup	
 	814543256	Button_Click			\Default Work Unit\Button_Click	
+	946098259	Pickaxe_Rock_Smash			\Default Work Unit\Pickaxe_Rock_Smash	
 	984952705	Music_Intro			\Default Work Unit\Music_Intro	
 	2464646960	TutorialMusic			\Default Work Unit\TutorialMusic	
 	2501428482	Footstep_Test			\Default Work Unit\Footstep_Test	
@@ -18,6 +20,8 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	127534707	Signal_Med_Tuned	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\Signal_Med_Tuned_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Signal_Med_Tuned		2116896
 	144558351	Signal_Med	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\Signal_Med_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Signal_Med		2116896
+	420510777	Pickaxe_Rock_Smash	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\Pickaxe_rock_break_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Pickaxe_Rock_Smash		156896
+	461170089	Pickaxe_Hit	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\Pickaxe_Hit1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Pickaxe_Hit		156896
 	548913708	Robot_Jump	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\Robot_Jump2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameJamSFX\Robot_Jump		296496
 	554546905	Tutorial_Music1	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\Tutorial_Music1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TutorialMusic\Tutorial_Music1\Tutorial_Music1		12877296
 	558657834	Signal_Close	C:\Users\Carter.Deken\Documents\GitHub\goodVisualDesign\Assets\Wwise Project\.cache\Mac\SFX\Signal_Close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Signal_Close		2116896

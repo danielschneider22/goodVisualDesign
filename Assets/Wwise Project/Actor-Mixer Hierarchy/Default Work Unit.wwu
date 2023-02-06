@@ -116,6 +116,15 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Pickaxe_Hit" ID="{5C6120C5-3799-45B5-886C-9BE51CE31E96}" ShortID="580373431">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9DEBC17C-BEE8-4958-B5AD-A916625FEC3D}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E19698F9-3506-4A7C-B3F1-C8AC917C0088}"/>
@@ -125,16 +134,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Pickaxe_Hit" ID="{387360E0-0A40-45F9-8CA1-29D3397346C3}">
+								<AudioFileSource Name="Pickaxe_Hit1" ID="{DD7002A8-8FE9-40A7-A89F-66F604E99EF9}">
 									<Language>SFX</Language>
-									<AudioFile>GameJamSFX\Pickaxe_Hit.wav</AudioFile>
+									<AudioFile>Pickaxe_Hit1.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1040859485"/>
+										<MediaID ID="461170089"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Pickaxe_Hit" ID="{387360E0-0A40-45F9-8CA1-29D3397346C3}" Platform="Linked"/>
+								<ActiveSource Name="Pickaxe_Hit1" ID="{DD7002A8-8FE9-40A7-A89F-66F604E99EF9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Robot_Jump" ID="{FA69721B-51F4-4156-84A6-B1EEA9A5D1DC}" ShortID="144861532">
@@ -193,6 +202,28 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Robot_Talk" ID="{55D02BD8-6700-4603-9F36-CDC3DFB7296E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pickaxe_Rock_Smash" ID="{F0B5FA02-D263-4691-8D46-4808F69DF562}" ShortID="498238947">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E19698F9-3506-4A7C-B3F1-C8AC917C0088}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92C79D2-5530-4860-94E0-73A709E9C4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pickaxe_rock_break" ID="{49354FEE-49CC-42B3-97F3-0CB7F3FFF5D5}">
+									<Language>SFX</Language>
+									<AudioFile>Pickaxe_rock_break.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="420510777"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pickaxe_rock_break" ID="{49354FEE-49CC-42B3-97F3-0CB7F3FFF5D5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
