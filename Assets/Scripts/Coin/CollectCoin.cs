@@ -14,7 +14,7 @@ public class CollectCoin : MonoBehaviour
     void Awake()
     {
         audioManager = FindObjectOfType<AudioManager>();
-        hitsLeft = 5;
+        hitsLeft = 8;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

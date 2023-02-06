@@ -17,6 +17,8 @@ public class BeatsManager : MonoBehaviour
     public AudioSource audioSource;
 
     public AK.Wwise.Event IntroMusic;
+    public AK.Wwise.Event AmbientMusic;
+    
     public float introTimer;
 
     public string musicTiming;
@@ -40,6 +42,9 @@ public class BeatsManager : MonoBehaviour
     public GameObject note2;
     public int notesPass;
     public GameObject centerCircle;
+
+    private float ambientSongLength = 73f;
+    private float intenseSongLength = 96f;
 
     public bool isSuccessTime;
 
@@ -136,11 +141,12 @@ public class BeatsManager : MonoBehaviour
         } else if(musicTiming == "playingMain")
         {
             mainMusicTimer = mainMusicTimer + Time.deltaTime;
-            if (mainMusicTimer >= 96f)
+            if (mainMusicTimer >= ambientSongLength)
             {
                 totalTime = 0f;
                 mainMusicTimer = 0f;
-                MainMusic.Post(gameObject);
+                AmbientMusic.Post(gameObject);
+                // MainMusic.Post(gameObject);
                 lastBeat = 0f;
             }
         }
@@ -151,8 +157,10 @@ public class BeatsManager : MonoBehaviour
     {
         ClickSound.Post(gameObject);
         OnBeatEvent.Invoke();
-        IntroMusic.Post(gameObject);
-        musicTiming = "playingIntro";
+        // IntroMusic.Post(gameObject);
+        AmbientMusic.Post(gameObject);
+        // musicTiming = "playingIntro";
+        musicTiming = "playingMain";
     }
 
     public void DoPulseLights()

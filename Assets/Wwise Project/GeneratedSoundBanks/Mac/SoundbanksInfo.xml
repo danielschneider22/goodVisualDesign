@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{C7A5B071-0775-72B7-08EC-D9CDA7100479}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{E4B64085-7BE7-6FFD-E0B1-731C6681760F}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -158,7 +158,7 @@
 						<MediaRef Id="127534707"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2464646960" Name="TutorialMusic" DurationType="OneShot" DurationMin="0" DurationMax="0">
+				<Event Id="2464646960" Name="TutorialMusic" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="554546905"/>
 					</MediaRefs>
@@ -298,5 +298,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5075CD09-A15D-6DFE-E4AD-0675D4FD91E8}</FileHash>
+	<FileHash>{B1B72A56-6939-0B61-95D4-3C03E9D456CD}</FileHash>
 </SoundBanksInfo>

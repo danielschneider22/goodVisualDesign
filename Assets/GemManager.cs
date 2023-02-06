@@ -18,6 +18,11 @@ public class GemManager : MonoBehaviour
     public Sprite topOpenDoor;
     public Sprite bottomDoor;
 
+    public AK.Wwise.Event RegularHit;
+    public AK.Wwise.Event WinningHit;
+    public AK.Wwise.Event DoorOpen;
+
+
     public Transform gemList;
  
     void Start()
@@ -46,6 +51,7 @@ public class GemManager : MonoBehaviour
     {
         miniGameCanvas.SetActive(true);
         activeGem = gem;
+        hitsLeftText.text = activeGem.hitsLeft.ToString() + " hits left";
     }
 
     public void HideMiniGame()
@@ -56,8 +62,11 @@ public class GemManager : MonoBehaviour
     {
         activeGem.hitsLeft = activeGem.hitsLeft - 1;
         hitsLeftText.text = activeGem.hitsLeft.ToString() + " hits left";
-        if(activeGem.hitsLeft == 0 )
+        
+
+        if (activeGem.hitsLeft == 0 )
         {
+            WinningHit.Post(gameObject);
             gemsCollected = gemsCollected + 1;
             gemList.GetChild(gemsCollected - 1).gameObject.SetActive(true);
             UpdateText();
@@ -68,10 +77,15 @@ public class GemManager : MonoBehaviour
 
             if(totalNumGems == gemsCollected)
             {
+                DoorOpen.Post(gameObject);
                 doorTop.sprite = topOpenDoor;
                 doorBottom.sprite = bottomDoor;
+                hitsLeftText.text = "8 hits left";
             }
-            
+
+        } else
+        {
+            RegularHit.Post(gameObject);
         }
     }
 }

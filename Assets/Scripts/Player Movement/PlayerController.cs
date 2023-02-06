@@ -41,7 +41,6 @@ public class PlayerController : MonoBehaviour
 	bool wallSliding;
 	public float wallSlidingSpeed;
 
-	private float move;
 	public bool IsDead;
 	private bool doneStartupBlackScreen;
 
@@ -142,7 +141,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if(IsDead && !doneStartupBlackScreen && beatsManager.musicTiming != null)
+        if(IsDead && !doneStartupBlackScreen)
         {
 			deadTime = deadTime += Time.deltaTime;
 			if(deadTime > 1.5f)
@@ -156,7 +155,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
 	{
-		if(IsDead && beatsManager.musicTiming == null)
+		if(IsDead || beatsManager.musicTiming == "" || beatsManager.musicTiming == null)
         {
 			return;
         }
@@ -201,7 +200,7 @@ public class PlayerController : MonoBehaviour
 
 	public void Move(float move, bool jump, bool jumpEnd)
 	{
-		if(IsDead && beatsManager.musicTiming == null)
+		if(IsDead || beatsManager.musicTiming == "" || beatsManager.musicTiming == null)
         {
 			return;
         }
@@ -209,7 +208,6 @@ public class PlayerController : MonoBehaviour
         {
 			StopMining();
         }
-		this.move = move;
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{

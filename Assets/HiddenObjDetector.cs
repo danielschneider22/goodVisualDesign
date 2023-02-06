@@ -58,13 +58,17 @@ public class HiddenObjDetector : MonoBehaviour
                 minDist = distance;
                 closestObj = exit.gameObject;
             }
+            startRendererColor = Color.blue;
             sensorSpriteRenderer.color = Color.blue;
         }
         if(minDist < 17)
         {
             sensorSpriteRenderer.sprite = sensorSprites[0];
             sensorSpriteRenderer.enabled = true;
-            gemManager.ShowMiniGame(closestObj.GetComponent<CollectCoin>());
+            if(startRendererColor != Color.blue)
+            {
+                gemManager.ShowMiniGame(closestObj.GetComponent<CollectCoin>());
+            }
         }
         else if (minDist < 25)
         {
@@ -91,16 +95,18 @@ public class HiddenObjDetector : MonoBehaviour
         {
             sensorSpriteRenderer.enabled = false;
         }*/
-        
-        Vector3 targ = closestObj.transform.position;
-        targ.z = 0f;
+        if(closestObj != null)
+        {
+            Vector3 targ = closestObj.transform.position;
+            targ.z = 0f;
 
-        Vector3 objectPos = sensorSpriteRenderer.transform.position;
-        targ.x = targ.x - objectPos.x;
-        targ.y = targ.y - objectPos.y;
+            Vector3 objectPos = sensorSpriteRenderer.transform.position;
+            targ.x = targ.x - objectPos.x;
+            targ.y = targ.y - objectPos.y;
 
-        float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
-        sensorSpriteRenderer.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
+            sensorSpriteRenderer.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        }
 
         if (timeElapsed < lerpDuration)
         {

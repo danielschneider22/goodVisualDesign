@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel.unity
+    path: Assets/Scenes/VictoryLevel.unity
     guid: bc86e5094914c0942ab66b71916a50ac
   - enabled: 1
     path: Assets/Scenes/Color.unity
