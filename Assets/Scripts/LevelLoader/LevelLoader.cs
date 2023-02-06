@@ -17,12 +17,14 @@ public class LevelLoader : MonoBehaviour
 
     public GameObject lava;
     private Vector3 initLavaPosition;
+    private BeatsManager beatsManager;
 
     private void Awake()
     {
         // resetAnimators();
         initPlayerPosition = player.transform.position;
         initLavaPosition = lava.transform.position;
+        beatsManager = GameObject.FindObjectOfType<BeatsManager>();
     }
 
     private void resetAnimators()
@@ -50,14 +52,9 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        AkSoundEngine.StopPlayingID(beatsManager.musicId);
         isDeathAnimation = false;
-        if (SceneManager.GetActiveScene().buildIndex + 1 == 3)
-        {
-            StartCoroutine(LoadLevel(0));
-        } else
-        {
-            StartCoroutine((LoadLevel(SceneManager.GetActiveScene().buildIndex + 1)));
-        }
+        StartCoroutine((LoadLevel(SceneManager.GetActiveScene().buildIndex + 1)));
         
     }
 

@@ -51,6 +51,7 @@ public class GemManager : MonoBehaviour
     {
         miniGameCanvas.SetActive(true);
         activeGem = gem;
+        activeGem.GetComponent<SpriteRenderer>().enabled = true;
         hitsLeftText.text = activeGem.hitsLeft.ToString() + " hits left";
     }
 
@@ -60,32 +61,37 @@ public class GemManager : MonoBehaviour
     }
     public void HadSuccess()
     {
-        activeGem.hitsLeft = activeGem.hitsLeft - 1;
-        hitsLeftText.text = activeGem.hitsLeft.ToString() + " hits left";
-        
-
-        if (activeGem.hitsLeft == 0 )
+        if(activeGem != null)
         {
-            WinningHit.Post(gameObject);
-            gemsCollected = gemsCollected + 1;
-            gemList.GetChild(gemsCollected - 1).gameObject.SetActive(true);
-            UpdateText();
-            miniGameCanvas.SetActive(false);
-            activeGem.isDestroyed = true;
-            Destroy(activeGem.gameObject);
-            activeGem = null;
+            activeGem.hitsLeft = activeGem.hitsLeft - 1;
+            hitsLeftText.text = activeGem.hitsLeft.ToString() + " hits left";
 
-            if(totalNumGems == gemsCollected)
+
+            if (activeGem.hitsLeft == 0)
             {
-                DoorOpen.Post(gameObject);
-                doorTop.sprite = topOpenDoor;
-                doorBottom.sprite = bottomDoor;
-                hitsLeftText.text = "8 hits left";
-            }
+                WinningHit.Post(gameObject);
+                gemsCollected = gemsCollected + 1;
+                gemList.GetChild(gemsCollected - 1).gameObject.SetActive(true);
+                UpdateText();
+                miniGameCanvas.SetActive(false);
+                activeGem.isDestroyed = true;
+                Destroy(activeGem.gameObject);
+                activeGem = null;
 
-        } else
-        {
-            RegularHit.Post(gameObject);
+                if (totalNumGems == gemsCollected)
+                {
+                    DoorOpen.Post(gameObject);
+                    doorTop.sprite = topOpenDoor;
+                    doorBottom.sprite = bottomDoor;
+                    hitsLeftText.text = "8 hits left";
+                }
+
+            }
+            else
+            {
+                RegularHit.Post(gameObject);
+            }
         }
+        
     }
 }

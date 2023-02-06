@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4923262071488843619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4923262071488843616}
+  - component: {fileID: 4923262071488843617}
+  m_Layer: 0
+  m_Name: GemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4923262071488843616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923262071488843619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4923262071488843617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923262071488843619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aab5f030acb7754896339894a3355ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalNumGems: 2
+  gemsCollected: 0
+  exitText: {fileID: 0}
+  miniGameCanvas: {fileID: 0}
+  playerController: {fileID: 0}
+  activeGem: {fileID: 0}
+  hitsLeftText: {fileID: 0}
+  doorTop: {fileID: 0}
+  doorBottom: {fileID: 0}
+  topOpenDoor: {fileID: -2869115396899081085, guid: b458b93f87997684da64892b6126c9eb,
+    type: 3}
+  bottomDoor: {fileID: 3499683669041570755, guid: b458b93f87997684da64892b6126c9eb,
+    type: 3}
+  RegularHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 80680ec2af99b69429dc380c8cae8f3f,
+      type: 2}
+  WinningHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0e034d7b67d5d0540abb472f5a647eff,
+      type: 2}
+  DoorOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9be73bde233c40941b168625b81f9157,
+      type: 2}
+  gemList: {fileID: 0}

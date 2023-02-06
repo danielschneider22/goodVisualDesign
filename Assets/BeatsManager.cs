@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BeatsManager : MonoBehaviour
@@ -51,9 +52,12 @@ public class BeatsManager : MonoBehaviour
     public PlayerController playerController;
     private GemManager gemManager;
 
+    public uint musicId;
+
 
     private void Start()
     {
+        musicTiming = null;
         beatTempo = 60f / beatTempo;
         gemManager = GameObject.FindObjectOfType<GemManager>();
     }
@@ -145,8 +149,14 @@ public class BeatsManager : MonoBehaviour
             {
                 totalTime = 0f;
                 mainMusicTimer = 0f;
-                AmbientMusic.Post(gameObject);
-                // MainMusic.Post(gameObject);
+                if(SceneManager.GetActiveScene().buildIndex == 0)
+                {
+                    AmbientMusic.Post(gameObject);
+                } else
+                {
+                    MainMusic.Post(gameObject);
+
+                }
                 lastBeat = 0f;
             }
         }
@@ -155,12 +165,20 @@ public class BeatsManager : MonoBehaviour
     public void StartMusic()
     
     {
+        // uint playingId = AkSoundEngine.PostEvent(eventName, gameobject);
+        
         ClickSound.Post(gameObject);
         OnBeatEvent.Invoke();
-        // IntroMusic.Post(gameObject);
-        AmbientMusic.Post(gameObject);
-        // musicTiming = "playingIntro";
-        musicTiming = "playingMain";
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            musicId = AmbientMusic.Post(gameObject);
+            musicTiming = "playingMain";
+        } else
+        {
+            IntroMusic.Post(gameObject);
+            musicTiming = "playingIntro";
+        }
+        
     }
 
     public void DoPulseLights()
