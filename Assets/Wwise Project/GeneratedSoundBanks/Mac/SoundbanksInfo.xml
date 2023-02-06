@@ -9,18 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{E4B64085-7BE7-6FFD-E0B1-731C6681760F}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{D2C7223E-6CB1-77AB-2482-9EC3B3C937D6}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
-				<File Id="127534707" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Signal_Med_Tuned.wav</ShortName>
-					<CachePath>SFX/Signal_Med_Tuned_10C4C929.wem</CachePath>
-				</File>
-				<File Id="144558351" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Signal_Med.wav</ShortName>
-					<CachePath>SFX/Signal_Med_10C4C929.wem</CachePath>
-				</File>
 				<File Id="420510777" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Pickaxe_rock_break.wav</ShortName>
 					<CachePath>SFX/Pickaxe_rock_break_10C4C929.wem</CachePath>
@@ -37,14 +29,6 @@
 					<ShortName>Tutorial_Music1.wav</ShortName>
 					<CachePath>SFX/Tutorial_Music1_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="558657834" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Signal_Close.wav</ShortName>
-					<CachePath>SFX/Signal_Close_10C4C929.wem</CachePath>
-				</File>
-				<File Id="615107530" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Signal_Far.wav</ShortName>
-					<CachePath>SFX/Signal_Far_10C4C929.wem</CachePath>
-				</File>
 				<File Id="667651215" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Door_Open.wav</ShortName>
 					<CachePath>SFX/Door_Open_10C4C929.wem</CachePath>
@@ -60,6 +44,10 @@
 				<File Id="773199226" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Door_Close.wav</ShortName>
 					<CachePath>SFX/Door_Close_10C4C929.wem</CachePath>
+				</File>
+				<File Id="799496899" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Signal.wav</ShortName>
+					<CachePath>SFX/Signal_10C4C929.wem</CachePath>
 				</File>
 				<File Id="819464491" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Victory_Music.wav</ShortName>
@@ -138,24 +126,9 @@
 						<MediaRef Id="548913708"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4101131940" Name="Signal_Close" DurationType="OneShot" DurationMin="12" DurationMax="12">
+				<Event Id="888557005" Name="Signal" DurationType="OneShot" DurationMin="1.5" DurationMax="1.5">
 					<MediaRefs>
-						<MediaRef Id="558657834"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3762455923" Name="Signal_Far" DurationType="OneShot" DurationMin="10.5" DurationMax="10.5">
-					<MediaRefs>
-						<MediaRef Id="615107530"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3291255546" Name="Signal_Med" DurationType="OneShot" DurationMin="12" DurationMax="12">
-					<MediaRefs>
-						<MediaRef Id="144558351"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3128087001" Name="Signal_Med_Tuned" DurationType="OneShot" DurationMin="12" DurationMax="12">
-					<MediaRefs>
-						<MediaRef Id="127534707"/>
+						<MediaRef Id="799496899"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2464646960" Name="TutorialMusic" DurationType="Infinite">
@@ -298,5 +271,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B1B72A56-6939-0B61-95D4-3C03E9D456CD}</FileHash>
+	<FileHash>{29C87607-62AC-2AC8-D081-156705A73B71}</FileHash>
 </SoundBanksInfo>

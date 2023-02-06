@@ -24,10 +24,7 @@ namespace AK
         static const AkUniqueID PICKAXE_HIT = 85039096U;
         static const AkUniqueID PICKAXE_ROCK_SMASH = 946098259U;
         static const AkUniqueID ROBOT_JUMP = 3241003010U;
-        static const AkUniqueID SIGNAL_CLOSE = 4101131940U;
-        static const AkUniqueID SIGNAL_FAR = 3762455923U;
-        static const AkUniqueID SIGNAL_MED = 3291255546U;
-        static const AkUniqueID SIGNAL_MED_TUNED = 3128087001U;
+        static const AkUniqueID SIGNAL = 888557005U;
         static const AkUniqueID TUTORIALMUSIC = 2464646960U;
         static const AkUniqueID VICTORYMUSIC = 2539955706U;
     } // namespace EVENTS

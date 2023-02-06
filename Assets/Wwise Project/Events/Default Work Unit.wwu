@@ -102,45 +102,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Signal_Close" ID="{23806213-268B-4AF1-BD84-C5DC0DCBE722}">
+				<Event Name="Signal" ID="{23806213-268B-4AF1-BD84-C5DC0DCBE722}">
 					<ChildrenList>
 						<Action Name="" ID="{18E13EA0-72EC-486F-8F7B-D9642965A4CB}" ShortID="681923049">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Signal_Close" ID="{245ADF07-40E6-4AAC-A54C-05EEA8D9FD93}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Signal_Far" ID="{67802B80-47CC-4911-8031-8BFE7E9ECDE5}">
-					<ChildrenList>
-						<Action Name="" ID="{42BEE8D4-B127-4164-92F9-502E6B12AD04}" ShortID="359796033">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Signal_Far" ID="{3F61FCBE-BBB6-4F02-8969-0C3323EEA00E}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Signal_Med" ID="{0E8D30F5-EE94-4ACB-8054-BC30A62A7E97}">
-					<ChildrenList>
-						<Action Name="" ID="{5B2BCBF2-AEE8-4EDC-A802-5F89E637F7A0}" ShortID="264549783">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Signal_Med" ID="{BFEF84AB-7ACB-4929-A1DE-1C485AF3836E}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Signal_Med_Tuned" ID="{8A14B519-EA4B-42F8-8652-9F1AEE278C8A}">
-					<ChildrenList>
-						<Action Name="" ID="{92F70695-B8AC-413C-8084-5EB4916B3973}" ShortID="714784781">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Signal_Med_Tuned" ID="{36CE4BC1-6973-41C7-BC3C-17768B5C5250}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
+									<ObjectRef Name="Signal" ID="{245ADF07-40E6-4AAC-A54C-05EEA8D9FD93}" WorkUnitID="{B7297833-8FCC-4DE9-B7F2-66BA4ECBB170}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
