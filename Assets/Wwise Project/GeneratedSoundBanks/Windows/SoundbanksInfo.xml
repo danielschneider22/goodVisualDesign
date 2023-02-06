@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{829598B0-DA51-18A6-E2B0-7002F6F2CD95}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{BB6681E7-5EFA-5EF5-E127-305F1C7AB3A2}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -20,6 +20,14 @@
 				<File Id="144558351" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Signal_Med.wav</ShortName>
 					<CachePath>SFX/Signal_Med_10C4C929.wem</CachePath>
+				</File>
+				<File Id="548913708" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Robot_Jump2.wav</ShortName>
+					<CachePath>SFX/Robot_Jump2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="554546905" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Tutorial_Music1.wav</ShortName>
+					<CachePath>SFX/Tutorial_Music1_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="558657834" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Signal_Close.wav</ShortName>
@@ -48,14 +56,6 @@
 				<File Id="819464491" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Victory_Music.wav</ShortName>
 					<CachePath>SFX/Victory_Music_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="882817458" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GameJamSFX\Robot_Jump.wav</ShortName>
-					<CachePath>SFX/GameJamSFX/Robot_Jump_10C4C929.wem</CachePath>
-				</File>
-				<File Id="918579418" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Tutorial_Music.wav</ShortName>
-					<CachePath>SFX/Tutorial_Music_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="933237735" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>LoopMusic1.wav</ShortName>
@@ -115,9 +115,9 @@
 						<MediaRef Id="933237735"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3241003010" Name="Robot_Jump" DurationType="OneShot" DurationMin="1.4969523" DurationMax="1.6802721">
+				<Event Id="3241003010" Name="Robot_Jump" DurationType="OneShot" DurationMin="1.5859655" DurationMax="1.6802721">
 					<MediaRefs>
-						<MediaRef Id="882817458"/>
+						<MediaRef Id="548913708"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4101131940" Name="Signal_Close" DurationType="OneShot" DurationMin="12" DurationMax="12">
@@ -140,9 +140,9 @@
 						<MediaRef Id="127534707"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2464646960" Name="TutorialMusic" DurationType="OneShot" DurationMin="73" DurationMax="73">
+				<Event Id="2464646960" Name="TutorialMusic" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<MediaRefs>
-						<MediaRef Id="918579418"/>
+						<MediaRef Id="554546905"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2539955706" Name="VictoryMusic" DurationType="OneShot" DurationMin="39.937504" DurationMax="39.937504">
@@ -280,5 +280,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{402D2400-9ED4-DFDB-0F0D-7F9CD9B231A8}</FileHash>
+	<FileHash>{BFB836D4-A87C-BB4C-B5B1-56CEA49EA808}</FileHash>
 </SoundBanksInfo>

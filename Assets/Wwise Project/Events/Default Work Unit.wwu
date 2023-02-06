@@ -82,10 +82,10 @@
 				</Event>
 				<Event Name="TutorialMusic" ID="{7C00F8BA-6325-4F35-9EB8-46CDDC2D9025}">
 					<ChildrenList>
-						<Action Name="" ID="{24E7A6C4-EA7C-4F5C-906D-3A90C1C5B4F9}" ShortID="180902500">
+						<Action Name="" ID="{0CAD8413-460B-450A-8F6F-795ED7C81833}" ShortID="783875113">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TutorialMusic" ID="{7F73E86F-63A5-4D2D-A444-7D4F825D3CC3}" WorkUnitID="{0FB71C2D-C03B-4E2B-B1FD-0F759C513B38}"/>
+									<ObjectRef Name="TutorialMusic" ID="{CF269D94-2D49-4BF9-B5DF-C4D5810557A5}" WorkUnitID="{0FB71C2D-C03B-4E2B-B1FD-0F759C513B38}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

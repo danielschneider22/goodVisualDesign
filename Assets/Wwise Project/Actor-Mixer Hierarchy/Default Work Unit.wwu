@@ -145,7 +145,7 @@
 											<Modifier Name="" ID="{C931AE9C-CCC3-4658-B91A-624B39A822FC}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -161,16 +161,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Robot_Jump" ID="{D1D8CFB6-D20B-4DAF-AADF-501DFC65355B}">
+								<AudioFileSource Name="Robot_Jump2" ID="{22698CF3-3C13-430D-9AD3-7CE5D56EC871}">
 									<Language>SFX</Language>
-									<AudioFile>GameJamSFX\Robot_Jump.wav</AudioFile>
+									<AudioFile>Robot_Jump2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="882817458"/>
+										<MediaID ID="548913708"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Robot_Jump" ID="{D1D8CFB6-D20B-4DAF-AADF-501DFC65355B}" Platform="Linked"/>
+								<ActiveSource Name="Robot_Jump2" ID="{22698CF3-3C13-430D-9AD3-7CE5D56EC871}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Robot_Talk" ID="{3AF082E8-8F43-458D-92B0-7E6F151FFB53}" ShortID="213284817">
