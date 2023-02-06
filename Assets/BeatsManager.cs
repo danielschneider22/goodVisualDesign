@@ -149,12 +149,13 @@ public class BeatsManager : MonoBehaviour
             {
                 totalTime = 0f;
                 mainMusicTimer = 0f;
-                if(SceneManager.GetActiveScene().buildIndex == 0)
+                AkSoundEngine.StopPlayingID(musicId);
+                if (SceneManager.GetActiveScene().buildIndex == 0)
                 {
-                    AmbientMusic.Post(gameObject);
+                    musicId = AmbientMusic.Post(gameObject);
                 } else
                 {
-                    MainMusic.Post(gameObject);
+                    musicId = MainMusic.Post(gameObject);
 
                 }
                 lastBeat = 0f;
@@ -185,7 +186,8 @@ public class BeatsManager : MonoBehaviour
     {
         foreach(PulseLightWithMusic child in pulseLightWithMusicList)
         {
-            child.TogglePulse();
+            if(child.GetComponent<Animator>() != null)
+                child.TogglePulse();
         }
         foreach(Transform child in torches)
         {

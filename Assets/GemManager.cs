@@ -52,6 +52,7 @@ public class GemManager : MonoBehaviour
         miniGameCanvas.SetActive(true);
         activeGem = gem;
         activeGem.GetComponent<SpriteRenderer>().enabled = true;
+        activeGem.GetComponent<MoveUpAndDown>().enabled = true;
         hitsLeftText.text = activeGem.hitsLeft.ToString() + " hits left";
     }
 

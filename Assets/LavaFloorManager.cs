@@ -6,10 +6,11 @@ public class LavaFloorManager : MonoBehaviour
 {
     public Transform lavaFloorTransform;
     public GameObject lavaParticle;
+    public Transform player;
 
     public void ScaleUpLavaFloor()
-    {
-        // lavaFloorTransform.transform.localScale = new Vector3(lavaFloorTransform.transform.localScale.x, lavaFloorTransform.transform.localScale.y + .2f, lavaFloorTransform.transform.localScale.z);
-        lavaFloorTransform.transform.position = new Vector3(lavaFloorTransform.position.x, lavaFloorTransform.transform.position.y + 1f, lavaFloorTransform.transform.position.z);
+    {       
+        float distance = Vector3.Distance(lavaFloorTransform.GetChild(0).position, player.position);
+        lavaFloorTransform.transform.position = new Vector3(lavaFloorTransform.position.x, lavaFloorTransform.transform.position.y + (distance > 75 ? 9f : 1f), lavaFloorTransform.transform.position.z);
     }
 }

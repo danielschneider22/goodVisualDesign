@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour
 
 	private AudioManager audioManager;
 	private BeatsManager beatsManager;
+	private GemManager gemManager;
 
 	private void Awake()
 	{
@@ -76,6 +77,7 @@ public class PlayerController : MonoBehaviour
 			OnLandEvent = new UnityEvent();
 		audioManager = FindObjectOfType<AudioManager>();
 		beatsManager = FindObjectOfType<BeatsManager>();
+		gemManager = FindObjectOfType<GemManager>();
 	}
 
 	public void MakeMining()
@@ -128,6 +130,7 @@ public class PlayerController : MonoBehaviour
 		deadTime = 0f;
 		IsDead = true;
 		animator.SetTrigger("Dead");
+		gemManager.HideMiniGame();
 
 	}
 	public void MakeUndead()

@@ -61,7 +61,11 @@ public class HiddenObjDetector : MonoBehaviour
             startRendererColor = Color.blue;
             sensorSpriteRenderer.color = Color.blue;
         }
-        if(minDist < 17)
+        if (minDist < 25)
+        {
+            gemManager.HideMiniGame();
+        }
+        if (minDist < 17)
         {
             sensorSpriteRenderer.sprite = sensorSprites[0];
             sensorSpriteRenderer.enabled = true;
@@ -70,18 +74,17 @@ public class HiddenObjDetector : MonoBehaviour
                 gemManager.ShowMiniGame(closestObj.GetComponent<CollectCoin>());
             }
         }
-        else if (minDist < 25)
+        else if (minDist < 33)
         {
             sensorSpriteRenderer.sprite = sensorSprites[1];
             sensorSpriteRenderer.enabled = true;
-            gemManager.HideMiniGame();
         }
-        else if (minDist < 32)
+        else if (minDist < 42)
         {
             sensorSpriteRenderer.sprite = sensorSprites[2];
             sensorSpriteRenderer.enabled = true;
         }
-        else if (minDist < 40)
+        else if (minDist < 50)
         {
             sensorSpriteRenderer.sprite = sensorSprites[3];
             sensorSpriteRenderer.enabled = true;
