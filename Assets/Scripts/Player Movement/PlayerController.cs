@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour
 	public class BoolEvent : UnityEvent<bool> { }
 
 	private AudioManager audioManager;
+	private BeatsManager beatsManager;
 
 	private void Awake()
 	{
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 		audioManager = FindObjectOfType<AudioManager>();
+		beatsManager = FindObjectOfType<BeatsManager>();
 	}
 
 	public void MakeMining()
@@ -140,7 +142,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if(IsDead && !doneStartupBlackScreen)
+        if(IsDead && !doneStartupBlackScreen && beatsManager.musicTiming != null)
         {
 			deadTime = deadTime += Time.deltaTime;
 			if(deadTime > 1.5f)
@@ -154,7 +156,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
 	{
-		if(IsDead)
+		if(IsDead && beatsManager.musicTiming == null)
         {
 			return;
         }
@@ -199,7 +201,7 @@ public class PlayerController : MonoBehaviour
 
 	public void Move(float move, bool jump, bool jumpEnd)
 	{
-		if(IsDead)
+		if(IsDead && beatsManager.musicTiming == null)
         {
 			return;
         }

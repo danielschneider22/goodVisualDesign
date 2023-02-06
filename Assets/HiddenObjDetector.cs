@@ -25,6 +25,8 @@ public class HiddenObjDetector : MonoBehaviour
 
     private GemManager gemManager;
 
+    public Transform exit;
+
     private void Start()
     {
         regularSensorX = sensorSpriteRenderer.transform.localScale.x;
@@ -47,6 +49,16 @@ public class HiddenObjDetector : MonoBehaviour
                 }
             }
             
+        }
+        if(listOfHiddenObjs.transform.childCount == 0)
+        {
+            float distance = Vector3.Distance(transform.position, exit.position);
+            if (distance < minDist)
+            {
+                minDist = distance;
+                closestObj = exit.gameObject;
+            }
+            sensorSpriteRenderer.color = Color.blue;
         }
         if(minDist < 17)
         {

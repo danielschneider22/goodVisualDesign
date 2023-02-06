@@ -19,7 +19,7 @@ public class BeatsManager : MonoBehaviour
     public AK.Wwise.Event IntroMusic;
     public float introTimer;
 
-    private string musicTiming;
+    public string musicTiming;
 
     public AK.Wwise.Event MainMusic;
     public float mainMusicTimer;
