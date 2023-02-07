@@ -54,6 +54,16 @@ public class BeatsManager : MonoBehaviour
 
     public uint musicId;
 
+    public Animator UIAnimator;
+    public GameObject uicanvasstuff;
+
+    public void hideUIAndStart()
+    {
+        UIAnimator.SetTrigger("doFade");
+        uicanvasstuff.SetActive(true);
+        StartMusic();
+    }
+
 
     private void Start()
     {
@@ -141,6 +151,7 @@ public class BeatsManager : MonoBehaviour
             introTimer = introTimer + Time.deltaTime;
             if (introTimer >= 12f)
             {
+                AkSoundEngine.StopPlayingID(musicId);
                 musicId =  MainMusic.Post(gameObject);
                 musicTiming = "playingMain";
                 totalTime = 0f;
@@ -149,7 +160,7 @@ public class BeatsManager : MonoBehaviour
         } else if(musicTiming == "playingMain")
         {
             mainMusicTimer = mainMusicTimer + Time.deltaTime;
-            if (mainMusicTimer >= ambientSongLength)
+            if (mainMusicTimer >= (SceneManager.GetActiveScene().buildIndex == 0 ? intenseSongLength : ambientSongLength))
             {
                 totalTime = 0f;
                 mainMusicTimer = 0f;

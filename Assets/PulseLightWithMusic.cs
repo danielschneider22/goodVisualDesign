@@ -11,6 +11,10 @@ public class PulseLightWithMusic : MonoBehaviour
     }
     public void TogglePulse()
     {
-        animator.SetTrigger("Pulse");
+        if(animator != null)
+        {
+            animator.SetTrigger("Pulse");
+        }
+        
     }
 }

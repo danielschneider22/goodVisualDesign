@@ -17,7 +17,7 @@ public class ExitManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && gemManager.totalNumGems == gemManager.gemsCollected && canGo)
+        if (Input.GetKeyDown(KeyCode.E) && gemManager.totalNumGems <= gemManager.gemsCollected && canGo)
         {
             levelLoader.LoadNextLevel();
         }

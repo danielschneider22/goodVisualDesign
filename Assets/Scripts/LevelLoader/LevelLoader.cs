@@ -54,11 +54,14 @@ public class LevelLoader : MonoBehaviour
     {
         AkSoundEngine.StopPlayingID(beatsManager.musicId);
         isDeathAnimation = false;
-        if(SceneManager.GetActiveScene().buildIndex == 0)
+        if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             GameObject.FindObjectOfType<VictoryManager>().DoVictory();
+        } else
+        {
+            StartCoroutine((LoadLevel(SceneManager.GetActiveScene().buildIndex + 1)));
         }
-        StartCoroutine((LoadLevel(SceneManager.GetActiveScene().buildIndex + 1)));
+        
         
     }
 

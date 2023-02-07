@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GemManager : MonoBehaviour
 {
@@ -34,7 +35,14 @@ public class GemManager : MonoBehaviour
     {
         if(totalNumGems - gemsCollected <= 0)
         {
-            exitText.text = "Press E\n To go to next level!";
+            if(SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                exitText.text = "Press E\n To win the game!";
+            } else
+            {
+                exitText.text = "Press E\n To go to next level!";
+            }
+            
         } else
         {
             exitText.text = "Requires " + (totalNumGems - gemsCollected) + " more\ngems to open";

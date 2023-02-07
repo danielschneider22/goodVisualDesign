@@ -8,7 +8,7 @@ public class ShowTextIfCloseToPlayer : MonoBehaviour
     public GameObject player;
     private TextMeshProUGUI text;
 
-    private bool isShowing = true;
+    private bool isShowing = false;
     private float timeElapsed;
     private float startValueColor = 0f;
     private float lerpDuration = .5f;
@@ -17,6 +17,7 @@ public class ShowTextIfCloseToPlayer : MonoBehaviour
     {
         text = GetComponent<TextMeshProUGUI>();
         text.color = new Color32(255, 255, 255, 0);
+        timeElapsed = .5f;
     }
 
     public void Update()

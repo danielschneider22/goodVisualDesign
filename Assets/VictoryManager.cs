@@ -6,14 +6,14 @@ public class VictoryManager : MonoBehaviour
 {
     public AK.Wwise.Event VictoryMusic;
     public GameObject VictoryCanvas;
+    public LavaFloorManager lavaFloorManager;
+    public BeatsManager beatsManager;
 
-    private void Start()
-    {
-        VictoryMusic.Post(gameObject);
-
-    }
     public void DoVictory()
     {
         VictoryMusic.Post(gameObject);
+        lavaFloorManager.stopLava = true;
+        AkSoundEngine.StopPlayingID(beatsManager.musicId);
+        VictoryCanvas.SetActive(true);
     }
 }
